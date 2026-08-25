@@ -16,6 +16,13 @@ Star counts do not matter. A one-star library that works is fine. A dead link is
 - Private repos, paywalled content without a public description, or job postings.
 - Duplicates. Search the README before adding.
 
+## Which file
+
+- `README.md`: Effect v4 core, ecosystem libraries, Effect v3 legacy, development tools, Effect in other languages, other lists.
+- `applications.md`: open source apps built on Effect, and templates, starters, and example projects.
+- `learning.md`: courses, patterns, articles, videos, talks, and podcasts.
+- `community.md`: meetups, official channels, and companies with a public source for using Effect.
+
 ## Entry format
 
 One line per entry, following [awesome-rust](https://github.com/rust-unofficial/awesome-rust):
@@ -40,7 +47,7 @@ Rules:
 bun run check
 ```
 
-`bun run check` runs `scripts/check-links.ts` on every URL in the README. It must pass. `bun run stale` prints GitHub repos that are archived or have had no push in twelve months; it is informational and runs weekly in CI.
+`bun run check` runs `scripts/check-links.ts` on every URL in the four markdown files. It must pass. `bun run stale` prints GitHub repos that are archived or have had no push in twelve months; it is informational and runs weekly in CI.
 
 ## Removing entries
 

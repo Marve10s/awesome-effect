@@ -1,4 +1,5 @@
-const README = new URL("../README.md", import.meta.url);
+const ROOT = new URL("..", import.meta.url);
+const FILES = ["README.md", "applications.md", "learning.md", "community.md"];
 const CONCURRENCY = 16;
 const TIMEOUT_MS = 20_000;
 const SKIP_HOSTS = new Set(["twitter.com", "x.com", "www.linkedin.com", "open.spotify.com", "podcasts.apple.com", "discord.gg", "javascript.plainenglish.io"]);
@@ -6,7 +7,7 @@ const UA = "Mozilla/5.0 (compatible; awesome-effect-link-check; +https://github.
 
 type Result = { url: string; status: number; ok: boolean; error?: string };
 
-const markdown = await Bun.file(README).text();
+const markdown = (await Promise.all(FILES.map((f) => Bun.file(new URL(f, ROOT)).text()))).join("\n");
 const urls = [...new Set([...markdown.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)].map((m) => m[1]))];
 
 // npmjs.com rate-limits page requests; the registry answers the same question without limits.

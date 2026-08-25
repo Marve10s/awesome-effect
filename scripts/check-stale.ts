@@ -1,4 +1,5 @@
-const README = new URL("../README.md", import.meta.url);
+const ROOT = new URL("..", import.meta.url);
+const FILES = ["README.md", "applications.md", "learning.md", "community.md"];
 const STALE_AFTER_DAYS = 365;
 const CONCURRENCY = 8;
 const token = Bun.env.GITHUB_TOKEN;
@@ -9,7 +10,7 @@ type Result =
   | { repo: string; error: string }
   | { repo: string; archived: boolean; pushedAt: string; ageDays: number; renamedTo?: string };
 
-const markdown = await Bun.file(README).text();
+const markdown = (await Promise.all(FILES.map((f) => Bun.file(new URL(f, ROOT)).text()))).join("\n");
 const repos = [...new Set([...markdown.matchAll(/https:\/\/github\.com\/([\w.-]+\/[\w.-]+)/g)].map((m) => m[1]))];
 
 async function inspect(repo: string): Promise<Result> {
