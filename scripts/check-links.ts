@@ -29,11 +29,19 @@ async function probe(url: string): Promise<Result> {
   }
 }
 
+// A slow host on a busy CI runner should not fail the build; retry network errors and 5xx once.
+async function probeWithRetry(url: string): Promise<Result> {
+  const first = await probe(url);
+  if (first.ok || (first.status >= 400 && first.status < 500)) return first;
+  await Bun.sleep(3_000);
+  return probe(url);
+}
+
 const queue = urls.filter((u) => !SKIP_HOSTS.has(new URL(u).hostname));
 const results: Result[] = [];
 await Promise.all(
   Array.from({ length: CONCURRENCY }, async () => {
-    for (let next = queue.shift(); next; next = queue.shift()) results.push(await probe(next));
+    for (let next = queue.shift(); next; next = queue.shift()) results.push(await probeWithRetry(next));
   }),
 );
 
