@@ -1,18 +1,18 @@
-# Awesome Effect [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Effect
 
-> Libraries, tools, apps, and learning material for Effect, the TypeScript library for typed errors, dependency injection, concurrency, and streams.
+Libraries, tools, apps, and learning material for [Effect](https://effect.website), the TypeScript library for typed errors, dependency injection, concurrency, and streams.
 
-Effect is in the middle of a major version change. Effect 3 (`effect@3.x`) is the current stable release. Effect 4 (`effect@4.0.0-rc`) merges most `@effect/*` packages into the core `effect` package under `effect/unstable/*` and gives every remaining package a single shared version number. Entries below say "Effect v4" or "Effect v3" when the library's `effect` peer dependency pins it to one major. No tag means the entry either supports both, is not a library, or was not checked.
+Effect 4 is the current major. The list is split by it: Effect v4 core is what ships with Effect 4, Ecosystem libraries are third-party packages that work next to it, and Effect v3 legacy holds the packages that were merged into core plus libraries still pinned to `effect@3`. Tools, apps, examples, and learning resources follow.
 
-Format follows [awesome-rust](https://github.com/rust-unofficial/awesome-rust): `owner/repo` link, one line on what it does. Last-updated years are noted when a repo has had no commits since 2024.
+Last updated: 2026-08-25.
 
 ## Contents
 
-- [Official](#official)
+- [Effect v4 core](#effect-v4-core)
   - [Links](#links)
   - [Core packages](#core-packages)
   - [Official tooling and repos](#official-tooling-and-repos)
-- [Libraries](#libraries)
+- [Ecosystem libraries](#ecosystem-libraries)
   - [State management and UI](#state-management-and-ui)
   - [Framework integrations](#framework-integrations)
   - [HTTP, RPC, and API](#http-rpc-and-api)
@@ -30,6 +30,9 @@ Format follows [awesome-rust](https://github.com/rust-unofficial/awesome-rust): 
   - [Service SDKs and API clients](#service-sdks-and-api-clients)
   - [Authentication and authorization](#authentication-and-authorization)
   - [Blockchain](#blockchain)
+- [Effect v3 legacy](#effect-v3-legacy)
+  - [Packages merged into Effect v4](#packages-merged-into-effect-v4)
+  - [Libraries for Effect v3](#libraries-for-effect-v3)
 - [Development tools](#development-tools)
   - [Editors and language service](#editors-and-language-service)
   - [Linting and code style](#linting-and-code-style)
@@ -48,11 +51,10 @@ Format follows [awesome-rust](https://github.com/rust-unofficial/awesome-rust): 
   - [Effect in other languages](#effect-in-other-languages)
   - [Other lists](#other-lists)
 
-## Official
+## Effect v4 core
 
 ### Links
 
-- [effect.website](https://effect.website) - Home page.
 - [Documentation (v4)](https://effect.website/docs/v4) - Docs for the Effect 4 release candidate.
 - [Documentation (v3)](https://effect.website/docs/v3) - Docs for Effect 3.
 - [API reference (v4)](https://effect.website/docs/v4/api) - Generated API docs for Effect 4.
@@ -68,20 +70,13 @@ Format follows [awesome-rust](https://github.com/rust-unofficial/awesome-rust): 
 
 ### Core packages
 
-Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 line unless noted.
+Published from the Effect-TS/effect monorepo at the shared v4 version. Packages that only exist for Effect 3 are under Effect v3 legacy.
 
-- [effect](https://www.npmjs.com/package/effect) - The core library. Effect, Layer, Schema, Stream, Config, Metric, Cache, and more. In v4 also holds HTTP, RPC, cluster, workflow, CLI, and AI modules under `effect/unstable/*`.
-- [@effect/platform](https://www.npmjs.com/package/@effect/platform) - Runtime-agnostic HTTP client and server, file system, terminal, workers, and key-value store interfaces. Merged into `effect` in v4.
+- [effect](https://www.npmjs.com/package/effect) - The core library: Effect, Layer, Schema, Stream, Config, Metric, Cache, and more. In v4 it also holds what used to be separate packages under `effect/unstable/*`: ai, cli, cluster, devtools, eventlog, http, httpapi, jsonschema, observability, persistence, process, reactivity, rpc, schema, socket, sql, workflow, and workers.
 - [@effect/platform-node](https://www.npmjs.com/package/@effect/platform-node) - Node.js implementations of the platform interfaces.
 - [@effect/platform-bun](https://www.npmjs.com/package/@effect/platform-bun) - Bun implementations of the platform interfaces.
 - [@effect/platform-browser](https://www.npmjs.com/package/@effect/platform-browser) - Browser implementations of the platform interfaces.
-- [@effect/platform-deno](https://www.npmjs.com/package/@effect/platform-deno) - Deno implementations of the platform interfaces. Effect v4.
-- [@effect/rpc](https://www.npmjs.com/package/@effect/rpc) - Schema-typed RPC over HTTP, WebSocket, or workers. Merged into `effect` in v4.
-- [@effect/cluster](https://www.npmjs.com/package/@effect/cluster) - Entities, sharding, and messaging across processes. Merged into `effect` in v4.
-- [@effect/workflow](https://www.npmjs.com/package/@effect/workflow) - Durable workflows on top of cluster. Merged into `effect` in v4.
-- [@effect/cli](https://www.npmjs.com/package/@effect/cli) - Command-line parsing, subcommands, prompts, and help generation. Merged into `effect` in v4.
-- [@effect/printer](https://www.npmjs.com/package/@effect/printer) - Pretty-printer for documents, with [@effect/printer-ansi](https://www.npmjs.com/package/@effect/printer-ansi) for terminal colors.
-- [@effect/sql](https://www.npmjs.com/package/@effect/sql) - SQL client, migrations, and schema-typed queries. Merged into `effect` in v4.
+- [@effect/platform-deno](https://www.npmjs.com/package/@effect/platform-deno) - Deno implementations of the platform interfaces.
 - [@effect/sql-pg](https://www.npmjs.com/package/@effect/sql-pg) - PostgreSQL driver.
 - [@effect/sql-pglite](https://www.npmjs.com/package/@effect/sql-pglite) - PGlite driver for PostgreSQL in WebAssembly.
 - [@effect/sql-mysql2](https://www.npmjs.com/package/@effect/sql-mysql2) - MySQL driver.
@@ -94,22 +89,15 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [@effect/sql-sqlite-wasm](https://www.npmjs.com/package/@effect/sql-sqlite-wasm) - SQLite driver for browsers via WebAssembly.
 - [@effect/sql-sqlite-react-native](https://www.npmjs.com/package/@effect/sql-sqlite-react-native) - SQLite driver for React Native.
 - [@effect/sql-sqlite-do](https://www.npmjs.com/package/@effect/sql-sqlite-do) - SQLite driver for Cloudflare Durable Objects.
-- [@effect/sql-drizzle](https://www.npmjs.com/package/@effect/sql-drizzle) - Run Drizzle queries through `@effect/sql`. Effect v3. Drizzle itself now ships an `@effect/sql-pg` driver, see below.
-- [@effect/sql-kysely](https://www.npmjs.com/package/@effect/sql-kysely) - Run Kysely queries through `@effect/sql`. Effect v3.
-- [@effect/ai](https://www.npmjs.com/package/@effect/ai) - Provider-agnostic language model, tool calling, and embeddings API. Merged into `effect` in v4.
 - [@effect/ai-openai](https://www.npmjs.com/package/@effect/ai-openai) - OpenAI provider.
 - [@effect/ai-anthropic](https://www.npmjs.com/package/@effect/ai-anthropic) - Anthropic provider.
 - [@effect/ai-openrouter](https://www.npmjs.com/package/@effect/ai-openrouter) - OpenRouter provider.
-- [@effect/ai-openai-compat](https://www.npmjs.com/package/@effect/ai-openai-compat) - Provider for OpenAI-compatible APIs. Effect v4.
-- [@effect/ai-google](https://www.npmjs.com/package/@effect/ai-google) - Google Gemini provider. Effect v3.
-- [@effect/ai-amazon-bedrock](https://www.npmjs.com/package/@effect/ai-amazon-bedrock) - Amazon Bedrock provider. Effect v3.
-- [@effect/atom-react](https://www.npmjs.com/package/@effect/atom-react) - React bindings for the Atom reactive state module. Effect v4. The v3 equivalent is `@effect-atom/atom-react`, see below.
-- [@effect/atom-solid](https://www.npmjs.com/package/@effect/atom-solid) - SolidJS bindings for Atom. Effect v4.
-- [@effect/atom-vue](https://www.npmjs.com/package/@effect/atom-vue) - Vue bindings for Atom. Effect v4.
+- [@effect/ai-openai-compat](https://www.npmjs.com/package/@effect/ai-openai-compat) - Provider for OpenAI-compatible APIs.
+- [@effect/atom-react](https://www.npmjs.com/package/@effect/atom-react) - React bindings for the Atom reactive state module. The v3 predecessor is `@effect-atom/atom-react`, listed under Effect v3 legacy.
+- [@effect/atom-solid](https://www.npmjs.com/package/@effect/atom-solid) - SolidJS bindings for Atom.
+- [@effect/atom-vue](https://www.npmjs.com/package/@effect/atom-vue) - Vue bindings for Atom.
 - [@effect/opentelemetry](https://www.npmjs.com/package/@effect/opentelemetry) - Export Effect spans, metrics, and logs through OpenTelemetry.
 - [@effect/vitest](https://www.npmjs.com/package/@effect/vitest) - `it.effect`, `it.live`, `it.scoped`, and TestClock helpers for Vitest.
-- [@effect/typeclass](https://www.npmjs.com/package/@effect/typeclass) - Functor, Monad, Semigroup, and other type classes. Effect v3.
-- [@effect/experimental](https://www.npmjs.com/package/@effect/experimental) - Modules under trial before they move to core, such as DevTools, event logs, and persistence. Effect v3.
 - [@effect/openapi-generator](https://www.npmjs.com/package/@effect/openapi-generator) - Generate Schema types, HTTP clients, and HttpApi modules from OpenAPI specs.
 - [@effect/language-service](https://www.npmjs.com/package/@effect/language-service) - TypeScript language service plugin with Effect-specific diagnostics, quick fixes, and refactors.
 - [@effect/tsgo](https://www.npmjs.com/package/@effect/tsgo) - TypeScript-Go build with the Effect language service compiled in. Includes an LSP-based linter.
@@ -127,18 +115,17 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [Effect-TS/wa-sqlite](https://github.com/Effect-TS/wa-sqlite) - Fork of wa-sqlite used by `@effect/sql-sqlite-wasm`.
 - [Effect-TS/next-release-action](https://github.com/Effect-TS/next-release-action) - GitHub Action for staged release branches from changesets.
 
-## Libraries
+## Ecosystem libraries
+
+Third-party libraries that work next to Effect 4 or whose peer range does not exclude it.
 
 ### State management and UI
 
-- [tim-smart/effect-atom](https://github.com/tim-smart/effect-atom) - Reactive state for Effect. Atoms hold values or running effects, and bindings exist for React (`@effect-atom/atom-react`), Solid, Vue, and LiveStore. Effect v3. The v4 version lives in the core repo as `@effect/atom-*`.
 - [sproott/effect-atom-svelte](https://github.com/sproott/effect-atom-svelte) - Svelte bindings for Effect Atom. Effect v4.
-- [ericc-ch/effect-atom-solid](https://github.com/ericc-ch/effect-atom-solid) - SolidJS bindings for effect-atom. Effect v3.
 - [nhattran998/tanstack-db-atom](https://github.com/nhattran998/tanstack-db-atom) - Atoms that wrap TanStack DB collections and queries.
 - [typeonce-dev/effect-xstate](https://github.com/typeonce-dev/effect-xstate) - XState actor integration for Effect Atom. Effect v4.
 - [foldkit/foldkit](https://github.com/foldkit/foldkit) - Frontend framework built on Effect, with Elm-style update loops, a UI component set, DevTools MCP, and server rendering. [Site](https://foldkit.dev).
 - [tarkaworks/foldocs](https://github.com/tarkaworks/foldocs) - Documentation site framework built on Foldkit.
-- [TylorS/typed](https://github.com/TylorS/typed) - Web application framework on Effect with push-based streams, routing, and templating.
 - [stefvw93/weft](https://github.com/stefvw93/weft) - Reactive DOM library where every node is an Effect.
 - [m9tdev/verrex](https://github.com/m9tdev/verrex) - UI framework where the A, E, R channels of an Effect survive from every leaf of the view tree to the root.
 - [doeixd/effect-atom-jsx](https://github.com/doeixd/effect-atom-jsx) - Fine-grained JSX runtime with Layer-provided services, async atoms, and optimistic actions. Effect v4.
@@ -147,12 +134,7 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [Thiladev/effect-view](https://github.com/Thiladev/effect-view) - Write React function components as Effects. Effect v4.
 - [bmvantunes/effect-view-server](https://github.com/bmvantunes/effect-view-server) - Turns validated source streams into typed snapshots and deltas for React and other clients. Effect v4.
 - [frondruntime/frond](https://github.com/frondruntime/frond) - Frontend runtime for React and MobX-facing application state.
-- [VasilVelikov00/effective-ui](https://github.com/VasilVelikov00/effective-ui) - Composable UI framework built on Effect.
-- [ToliaGuy/reffect](https://github.com/ToliaGuy/reffect) - React bindings for Effect.
-- [81reap/react-effect](https://github.com/81reap/react-effect) - Package for full-stack React and Effect applications.
-- [pkishorez/use-effect-ts](https://github.com/pkishorez/use-effect-ts) - React hooks for running Effects.
 - [SuttonKyle/effect-ts-react-stable-hooks](https://github.com/SuttonKyle/effect-ts-react-stable-hooks) - Port of fp-ts-react-stable-hooks to Effect. Last updated 2024.
-- [nemmtor/injectio](https://github.com/nemmtor/injectio) - Turn React components into Effects that can return values, for modals and dialogs opened from code.
 - [Inalegwu/EffectCanvas](https://github.com/Inalegwu/EffectCanvas) - Canvas renderer for React driven by Effect.
 - [timurrakhimzhan/unitflow](https://github.com/timurrakhimzhan/unitflow) - Effect-first state manager.
 - [Handfish/effstate](https://github.com/Handfish/effstate) - Actor-based state management built on Effect.
@@ -161,15 +143,7 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [typeonce-dev/effect-machine](https://github.com/typeonce-dev/effect-machine) - Schema-first state machines and statecharts. Home of the proposed Machine API while it incubates. Effect v4.
 - [cevr/effect-machine](https://github.com/cevr/effect-machine) - Schema-first state machines with compile-time transition checks, state-scoped effects, and persistence.
 - [umpire-tools/umpire](https://github.com/umpire-tools/umpire) - Reactive derived state for forms with interdependent options. Effect v4.
-- [savkelita/tea-effect](https://github.com/savkelita/tea-effect) - The Elm Architecture for TypeScript with Effect. Effect v3.
-- [derrickbeining/effect-mvu](https://github.com/derrickbeining/effect-mvu) - Port of the Elm architecture to Effect. Last updated 2023.
-- [TylorS/typed-lazy-ref](https://github.com/TylorS/typed-lazy-ref) - Lazily evaluated, streaming state management.
-- [TylorS/typed-async-data](https://github.com/TylorS/typed-async-data) - Loading, success, failure, and optimistic states for async data.
-- [TylorS/typed-navigation](https://github.com/TylorS/typed-navigation) - Browser navigation on the Navigation API with a History API fallback.
-- [TylorS/typed-route](https://github.com/TylorS/typed-route) - Type-safe, bidirectional route matching and interpolation on Effect Schema.
-- [lucas-barake/effect-form](https://github.com/lucas-barake/effect-form) - Forms with Effect Schema validation and React bindings. Effect v3.
 - [carloitaben/conform-to-effect](https://github.com/carloitaben/conform-to-effect) - Conform helpers that validate forms with Effect Schema.
-- [hannoeru/formik-effect-schema](https://github.com/hannoeru/formik-effect-schema) - Effect Schema validation for Formik. Last updated 2024.
 - [react-hook-form/resolvers](https://github.com/react-hook-form/resolvers) - Includes an Effect Schema resolver for React Hook Form.
 - [Alette Signal](https://alette-os.com) - Frontend data fetching library built with Effect.
 - [julia-script/effect-motion](https://github.com/julia-script/effect-motion) - Animation primitives on Effect. Effect v4.
@@ -179,15 +153,10 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [voidhashcom/effect-query](https://github.com/voidhashcom/effect-query) - TanStack Query adapter that works with Effect RPC and HttpApi clients. Effect v4.
 - [tiesen243/effect-tanstack-query](https://github.com/tiesen243/effect-tanstack-query) - Bridge Effect HttpApi clients into TanStack Query options. Effect v4.
 - [EthanShoeDev/effect-tanstack-start](https://github.com/EthanShoeDev/effect-tanstack-start) - Serve Effect HttpApi from TanStack Start.
-- [mcrovero/effect-nextjs](https://github.com/mcrovero/effect-nextjs) - Typed helpers for Next.js App Router pages, layouts, server components, and actions. Effect v3.
-- [khanetor/effect-remix](https://github.com/khanetor/effect-remix) - Adapters for using Effect in Remix loaders and actions. Last updated 2024.
 - [artisanstreet/svelte-effect-runtime](https://github.com/artisanstreet/svelte-effect-runtime) - Effect runtime for Svelte components.
 - [RATIU5/sveltekit-effect-runtime](https://github.com/RATIU5/sveltekit-effect-runtime) - Wrappers for running Effect in SvelteKit handlers, loaders, and actions. Effect v4.
 - [kuroski/effect-svelte](https://github.com/kuroski/effect-svelte) - Run Effect programs in SvelteKit load and remote functions with error, redirect, and form handling. Effect v3.
-- [JonahPlusPlus/solid-effect](https://github.com/JonahPlusPlus/solid-effect) - Utilities for using Effect in SolidJS. Last updated 2024.
-- [devx-op/effectify](https://github.com/devx-op/effectify) - Monorepo of integrations: Solid bindings for effect-atom, Better Auth for Node, and more. Effect v3.
 - [heddendorp/effect-angular](https://github.com/heddendorp/effect-angular) - Angular adapters for Effect Platform HttpClient and Effect RPC. Effect v4.
-- [withstudiocms/studiocms](https://github.com/withstudiocms/studiocms) - Astro headless CMS whose `@withstudiocms/effect` package wraps Effect for Astro integrations. Effect v3.
 - [glitchkids/press.gk](https://github.com/glitchkids/press.gk) - Git-based CMS for Astro with an Effect runtime and Cloudflare deployment.
 - [honojs/middleware](https://github.com/honojs/middleware) - Contains `@hono/effect-validator`, a Hono validator middleware for Effect Schema.
 - [kylobyte-dev/keel](https://github.com/kylobyte-dev/keel) - Fastify 5 backend framework with Effect Schema as type provider and controllers as Effect services.
@@ -197,20 +166,14 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [rjdellecese/confect](https://github.com/rjdellecese/confect) - Convex with Effect: define schemas, validators, and functions as Effect services.
 - [austinm911/effect-zero](https://github.com/austinm911/effect-zero) - Effect-backed server adapters for Zero sync mutators. Supports Effect v3 and v4.
 - [realms-labs/effect-zero](https://github.com/realms-labs/effect-zero) - Another Effect integration for Zero mutators.
-- [nounder/effect-start](https://github.com/nounder/effect-start) - Declarative full-stack apps with Effect. Effect v3.
 - [osuki-dev/vite-plugin-effect](https://github.com/osuki-dev/vite-plugin-effect) - Vite plugin exposing a backend API and RPC gateway as a virtual client module. Effect v4.
 - [effect-app/libs](https://github.com/effect-app/libs) - Application libraries from effect-app, covering API contracts, client, and Vue integration.
-- [adamgoose/raycast-effect](https://github.com/adamgoose/raycast-effect) - Write Raycast extensions with Effect.
 - [effect-native/effect-native](https://github.com/effect-native/effect-native) - Native platform tools built on Effect: cr-sqlite service, OpenRouter client, and schemas. Effect v4 packages published under `@beta`.
 - [rockware-ai/nx](https://github.com/rockware-ai/nx) - Nx plugins that scaffold Effect libraries, services, and Node apps with `@effect/vitest`.
-- [mikearnaldi/vite-remix-effect](https://github.com/mikearnaldi/vite-remix-effect) - Remix on Vite with Effect, by the Effect author. Last updated 2023.
-- [mikearnaldi/effect-remix-stream](https://github.com/mikearnaldi/effect-remix-stream) - Streaming responses from Remix with Effect. Last updated 2024.
-- [Effect-Community/react](https://github.com/Effect-Community/react) - React integration with Query and Effect from the Effect 2 era. Last updated 2023.
 
 ### HTTP, RPC, and API
 
-- [sukovanej/effect-http](https://github.com/sukovanej/effect-http) - Declarative HTTP APIs with OpenAPI generation. Predates `HttpApi` in `@effect/platform`, which covers the same ground. Effect v3.
-- [utopyin/effect-orpc](https://github.com/utopyin/effect-orpc) - Effect integration for oRPC. Effect v3.
+- [utopyin/effect-orpc](https://github.com/utopyin/effect-orpc) - Effect integration for oRPC.
 - [Sebastian-Prisacariu/effect-trpc](https://github.com/Sebastian-Prisacariu/effect-trpc) - tRPC-style ergonomics for Effect apps. Experimental.
 - [adamjosefus/fx-fetch](https://github.com/adamjosefus/fx-fetch) - Immutable, clonable HTTP fetching built on Effect.
 - [TheDevMinerTV/typed-at-rest](https://github.com/TheDevMinerTV/typed-at-rest) - Typesafe HTTP handlers and clients backed by Effect Schema.
@@ -218,124 +181,69 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [thomasfosterau/effect-jsonapi](https://github.com/thomasfosterau/effect-jsonapi) - Define and implement JSON:API-compliant APIs. Effect v4.
 - [gabeins/effect-jsonapi](https://github.com/gabeins/effect-jsonapi) - JSON:API spec support for Effect. Effect v4.
 - [Dr-Nikson/effect-grpc](https://github.com/Dr-Nikson/effect-grpc) - gRPC and Protobuf for Effect.
-- [bastikohn/effect-grpc](https://github.com/bastikohn/effect-grpc) - gRPC with a `protoc` plugin that generates Effect services. Effect v3.
 - [erikshestopal/effect-protobuf](https://github.com/erikshestopal/effect-protobuf) - Generate Effect Schemas from `.proto` files and encode or decode binary, ProtoJSON, and text formats. Effect v4.
 - [modevol-com/gqloom](https://github.com/modevol-com/gqloom) - GraphQL schema and resolvers from runtime types, with an Effect Schema adapter.
-- [semyenov/effect-graphql](https://www.npmjs.com/package/@semyenov/effect-graphql) - Type-safe GraphQL schemas and resolvers with Effect Schema. Effect v3.
 - [egriff38/effect-graphql](https://github.com/egriff38/effect-graphql) - Prototype code-first GraphQL on Effect Schema and RPC. Effect v4.
-- [nrf110/effect-gql](https://github.com/nrf110/effect-gql) - Experimental GraphQL framework for Effect. Effect v3.
-- [pothos-plugin-effect](https://www.npmjs.com/package/pothos-plugin-effect) - Pothos GraphQL plugin for resolvers that return Effects. Effect v3.
 - [anomalyco/effect-http-recorder](https://github.com/anomalyco/effect-http-recorder) - Record Effect HTTP and WebSocket traffic once, replay from JSON cassettes in tests. Effect v4.
-- [Makisuo/effect-rpc-tanstack-devtools](https://github.com/Makisuo/effect-rpc-tanstack-devtools) - TanStack Devtools panel for Effect RPC requests and timings.
 - [joepjoosten/odata-effect](https://github.com/joepjoosten/odata-effect) - Tree-shakable OData V2 and V4 client for SAP services with code generation.
 - [successkrisz/effect-packages](https://github.com/successkrisz/effect-packages) - `effect-lambda` AWS Lambda wrappers and `effect-oauth-client`, an OAuth 2.0 client credentials helper for the v4 HttpClient.
 - [tim-smart/multipasta](https://github.com/tim-smart/multipasta) - Cross-platform multipart parser used by `@effect/platform`.
-- [tim-smart/effect-http](https://github.com/tim-smart/effect-http) - Early HTTP toolkit that became `@effect/platform`. Last updated 2023.
 
 ### OpenAPI and code generation
 
 - [tim-smart/openapi-gen](https://github.com/tim-smart/openapi-gen) - Generate Effect HTTP clients from OpenAPI specs.
 - [lucas-barake/openapi-gen](https://github.com/lucas-barake/openapi-gen) - Generate Effect Schema types and HttpClient implementations from OpenAPI specs.
-- [fortanix/openapi-to-effect](https://github.com/fortanix/openapi-to-effect) - Generate Effect Schema definitions from an OpenAPI document. Effect v3.
 - [jbt95/openapi-effect](https://github.com/jbt95/openapi-effect) - Generate Effect Schema and HTTP clients from OpenAPI 3.0 and 3.1. Effect v4.
-- [davidgoli/effect-openapi-server-gen](https://github.com/davidgoli/effect-openapi-server-gen) - Generate an HttpApi server from an OpenAPI schema.
 - [astahmer/typed-openapi](https://github.com/astahmer/typed-openapi) - Headless TypeScript API client generator with Effect Schema output.
 - [orval-labs/orval](https://github.com/orval-labs/orval) - OpenAPI client generator with an `@orval/effect` target.
 - [daotl/ts-to-effect-schema](https://github.com/daotl/ts-to-effect-schema) - Generate Effect Schemas from TypeScript types and interfaces.
-- [use-drzl/drzl](https://github.com/use-drzl/drzl) - Drizzle codegen with `@drzl/generator-effect` and `@drzl/generator-effect-http` targets. Effect v3.
-- [omar-dulaimi/supawatch](https://github.com/omar-dulaimi/supawatch) - Compiles a PostgreSQL schema into validators, types, and API layers, with an Effect target. Effect v3.
-- [fasciajs/fascia](https://github.com/fasciajs/fascia) - Describe a schema once, emit zod, arktype, effect, or valibot, and OpenAPI and JSON Schema. Effect v3.
+- [use-drzl/drzl](https://github.com/use-drzl/drzl) - Drizzle codegen with `@drzl/generator-effect` and `@drzl/generator-effect-http` targets.
 - [Michael4d45/effect-schema-generator](https://github.com/Michael4d45/effect-schema-generator) - Effect Schema generator.
 
 ### Schema, data types, and utilities
 
-- [jessekelly881/effect-schema-compilers](https://github.com/jessekelly881/effect-schema-compilers) - Compile Effect Schemas to fakers, empty values, and semigroups. Last updated 2024.
-- [jessekelly881/effect-types](https://github.com/jessekelly881/effect-types) - Schemas organized by data type. Last updated 2024.
-- [AMar4enko/effect-schema-compiler](https://github.com/AMar4enko/effect-schema-compiler) - Ergonomic compiler for Effect Schema ASTs. Effect v3.
-- [AMar4enko/effect-schema-avro](https://github.com/AMar4enko/effect-schema-avro) - Avro codec for Effect Schema.
 - [joepjoosten/effect-avro](https://github.com/joepjoosten/effect-avro) - Five `@effect-avro` packages for Avro schemas and binary data. Effect v4.
 - [PaulJPhilp/effect-json](https://github.com/PaulJPhilp/effect-json) - Schema-driven JSON serialization.
-- [jessekelly881/effect-yaml](https://github.com/jessekelly881/effect-yaml) - YAML parsing helpers. Effect v3.
 - [effect-yaml](https://www.npmjs.com/package/effect-yaml) - YAML utilities from the Effect 2 era.
-- [srinitude/effect-json-schema](https://github.com/srinitude/effect-json-schema) - Effect Schema adapter for Standard JSON Schema V1. Effect v3.
-- [harrysolovay/standard-json-schema](https://github.com/harrysolovay/standard-json-schema) - Turn Standard Schema types, Effect Schema included, into JSON Schema.
 - [osbytes/standard-schema-faker](https://github.com/osbytes/standard-schema-faker) - Seeded fake data for Standard Schema validators, Effect Schema included.
 - [saiashirwad/effect-grammar](https://github.com/saiashirwad/effect-grammar) - Effect Schema, but for text formats. Effect v4.
-- [middle-ages/effect-schema-viz](https://github.com/middle-ages/effect-schema-viz) - Render Effect Schemas as Graphviz diagrams. Effect v3.
-- [tvshevchuk/effect-schema-geojson](https://github.com/tvshevchuk/effect-schema-geojson) - Schemas for GeoJSON types. Effect v3.
+- [tvshevchuk/effect-schema-geojson](https://github.com/tvshevchuk/effect-schema-geojson) - Schemas for GeoJSON types.
 - [leonitousconforti/effect-schemas](https://github.com/leonitousconforti/effect-schemas) - Shared schemas used across the author's projects. Effect v4.
-- [dudeofawesome/effect-schemas](https://github.com/dudeofawesome/effect-schemas) - Common data schemas. Effect v3.
-- [arckit-dev/effect](https://github.com/arckit-dev/effect) - Schema utilities for domain modeling with branded types. Effect v3.
+- [arckit-dev/effect](https://github.com/arckit-dev/effect) - Schema utilities for domain modeling with branded types.
 - [just-be-dev/effect-typed-id](https://github.com/just-be-dev/effect-typed-id) - TypeID spec implementation. Effect v4.
-- [TylorS/typed-id](https://github.com/TylorS/typed-id) - UUID, NanoID, and ULID generation.
 - [rjdellecese/effect-units](https://github.com/rjdellecese/effect-units) - Typed quantities and unit conversions checked by the type system. Effect v4.
-- [TylorS/templeffect](https://github.com/TylorS/templeffect) - Templating with Effect Schema parameter validation and nesting.
-- [PaulJPhilp/effect-mdx](https://github.com/PaulJPhilp/effect-mdx) - Parse, compile, and manipulate MDX.
-- [PaulJPhilp/effect-regex](https://github.com/PaulJPhilp/effect-regex) - Regex processing CLI and library.
-- [PaulJPhilp/effect-env](https://github.com/PaulJPhilp/effect-env) - Environment variables with schema validation.
-- [emergente-labs/effect-env](https://github.com/emergente-labs/effect-env) - Environment variable configuration with Effect. Effect v3.
-- [hychen/effect-builder](https://github.com/hychen/effect-builder) - Immutable builder pattern with runtime validation. Last updated 2024.
-- [sukovanej/effect-monocle](https://github.com/sukovanej/effect-monocle) - Port of monocle-ts optics. Effect v3, last updated 2024.
-- [middle-ages/effect-ts-folds](https://github.com/middle-ages/effect-ts-folds) - Recursion schemes for Effect. Effect v3.
 - [parischap/effect-libs](https://github.com/parischap/effect-libs) - Date and number parsing and formatting, sscanf and sprintf templating, pretty printing, and ANSI styles.
 - [overengineeringstudio/effect-utils](https://github.com/overengineeringstudio/effect-utils) - Utilities and integrations collected from the author's production apps.
 - [spencerbeggs/effected](https://github.com/spencerbeggs/effected) - Git, commands, and YAML services, the app plumbing Effect leaves to you. Effect v4.
 - [ayronforge/haversack](https://github.com/ayronforge/haversack) - Typed services for email, analytics, feature flags, payments, auth, and blob storage.
-- [nipakke/effect-pantry](https://github.com/nipakke/effect-pantry) - Add-ons for Node.js apps such as typed events. Effect v3.
 - [nunofyobiz/effect-extras](https://github.com/nunofyobiz/effect-extras) - Convenience wrappers and data structures that fill gaps in core modules. Effect v4.
 - [ggallovalle/effext](https://github.com/ggallovalle/effext) - Extensions exploring what belongs in the standard library.
-- [lishaduck/effect-utils](https://github.com/lishaduck/effect-utils) - Small utilities for Effect.
-- [embedded-insurance/effect-use](https://github.com/embedded-insurance/effect-use) - Collection of Effect services. Last updated 2025.
-- [limwa/effect-bits](https://www.npmjs.com/package/@limwa/effect-bits) - Utilities for working with Effect. Effect v3.
-- [konkerdotdev/effect-ts-prelude](https://github.com/konkerdotdev/effect-ts-prelude) - Prelude re-exports. Effect v3, last updated 2024.
-- [jpb06/effect-errors](https://github.com/jpb06/effect-errors) - Pretty error reporting with source snippets and spans. Effect v3.
-- [btravstack/unthrown](https://github.com/btravstack/unthrown) - Errors as values with a separate defect channel, with an Effect adapter. Effect v3.
-- [spion/effect-tagged-contextual-error](https://github.com/spion/effect-tagged-contextual-error) - Tagged errors with context, inspired by Rust's anyhow.
 - [ethanniser/effect-distributed-lock](https://github.com/ethanniser/effect-distributed-lock) - Distributed semaphore with pluggable backends. In active development.
 - [jacob-ebey/mini-effect](https://github.com/jacob-ebey/mini-effect) - Minimal lazy, composable, cancellable effect system, not compatible with Effect.
-- [harrysolovay/toyffect](https://github.com/harrysolovay/toyffect) - Toy re-implementation of `Effect.gen` and `Context.Tag` for learning how Effect works.
-- [clayroach/effect-sugar](https://github.com/clayroach/effect-sugar) - For-comprehension style `gen` blocks via esbuild, tsc, and TS plugin transforms.
-- [typesugar/typesugar](https://github.com/typesugar/typesugar) - Compile-time macros for TypeScript with an Effect package. Effect v3.
+- [typesugar/typesugar](https://github.com/typesugar/typesugar) - Compile-time macros for TypeScript with an Effect package.
 - [nikelborm/effect-garden](https://github.com/nikelborm/effect-garden) - Monorepo of small Effect packages and an oxlint import plugin.
 - [systemfsoftware/systemfsoftware](https://github.com/systemfsoftware/systemfsoftware) - Effect libraries and developer tooling for functional software architecture, spanning v3 and v4.
 - [dataquail/effect-server-utils](https://github.com/dataquail/effect-server-utils) - Utility libraries for Effect servers.
 
 ### Databases and storage
 
-- [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) - Drizzle added an `@effect/sql-pg` driver with an async design for Effect. Effect v3.
-- [emergente-labs/effect-sql-model](https://github.com/emergente-labs/effect-sql-model) - Compile Effect Schema and `@effect/sql` model definitions into Drizzle tables. Effect v3.
+- [drizzle-team/drizzle-orm](https://github.com/drizzle-team/drizzle-orm) - Drizzle added an `@effect/sql-pg` driver with an async design for Effect.
 - [relsunkaev/effect-qb](https://github.com/relsunkaev/effect-qb) - Typed SQL query builder that renders per dialect and executes through Effect SQL. Effect v4.
 - [TylorS/effect-sql-kysely](https://github.com/TylorS/effect-sql-kysely) - `@effect/sql` interface for Kysely.
-- [effect-sql-kysely](https://www.npmjs.com/package/effect-sql-kysely) - Kysely with `@effect/sql`, typed queries. Effect v3.
-- [Fredx87/effect-kysely](https://github.com/Fredx87/effect-kysely) - Kysely adapter. Last updated 2024.
-- [pigoz/effect-sql](https://github.com/pigoz/effect-sql) - Relational databases with Effect, from before `@effect/sql`.
-- [tim-smart/sqlfx](https://github.com/tim-smart/sqlfx) - The SQL toolkit that became `@effect/sql`. Last updated 2024.
 - [gloomweaver/effql](https://github.com/gloomweaver/effql) - Code generation in the style of sqlc for Effect SQL, driven by PostgreSQL introspection.
 - [eikster-dk/sqlc-gen-better-typescript](https://github.com/eikster-dk/sqlc-gen-better-typescript) - Plugin for sqlc that emits Effect v4 or plain async code from SQL queries.
 - [m9tdev/effect-prisma-generator](https://github.com/m9tdev/effect-prisma-generator) - Prisma generator that emits an Effect service wrapper with typed errors and transactions. Supports Effect v3 and v4.
 - [Cyberistic/Prisma-Effect-Schema-Generator](https://github.com/Cyberistic/Prisma-Effect-Schema-Generator) - Prisma generator that emits an Effect Schema per model. Supports Effect v3 and v4.
-- [samuelho-dev/prisma-effect-kysely](https://github.com/samuelho-dev/prisma-effect-kysely) - Generate Kysely-compatible Effect Schemas from Prisma models. Effect v3.
-- [jessekelly881/zenstack-effect](https://github.com/jessekelly881/zenstack-effect) - ZenStack plugin for Effect.
-- [akoenig/effect-sql-inline-migrations](https://www.npmjs.com/package/@akoenig/effect-sql-inline-migrations) - Migration loader that does not read the file system. Effect v3.
-- [doubleloop-io/effect-mongodb](https://github.com/doubleloop-io/effect-mongodb) - MongoDB toolkit with typed collections. Effect v3.
-- [Gialicus/effect-ts-mongodb](https://github.com/Gialicus/effect-ts-mongodb) - MongoDB driver wrapper. Last updated 2023.
 - [al3xanderwalker/redfx](https://github.com/al3xanderwalker/redfx) - Redis with typed commands, schema-typed keys, pub/sub and streams as Effect Streams, and caching.
-- [envoy1084/effect-redis](https://github.com/envoy1084/effect-redis) - Redis bindings with transactions and pipelines. Effect v3.
 - [6qat/effect-redis](https://github.com/6qat/effect-redis) - Effect wrapper for Redis.
-- [Vortex-Dimension-Digital/effect-redis-bun](https://github.com/Vortex-Dimension-Digital/effect-redis-bun) - KeyValueStore implementation on Bun's Redis client. Effect v3.
 - [jmenga/effect-dynamodb](https://github.com/jmenga/effect-dynamodb) - DynamoDB ORM with schema and geo packages. Effect v4.
 - [evryg-org/effect-contrib](https://github.com/evryg-org/effect-contrib) - Neo4j client, schema, and Vitest helpers from Evryg. Effect v4.
 - [jellologic/starrocks-sdk](https://github.com/jellologic/starrocks-sdk) - StarRocks SDK with Effect services, Stream Load, and a query builder.
-- [effect-supabase](https://www.npmjs.com/package/effect-supabase) - Supabase client wrapper. Effect v3.
 - [alphaiv-project/supabase-effect](https://github.com/alphaiv-project/supabase-effect) - Supabase JS client wrapper. Effect v4.
 - [fwal/effect-firebase](https://github.com/fwal/effect-firebase) - Firebase adapters for Effect.
-- [jys9962/effect-ts-typeorm](https://github.com/jys9962/effect-ts-typeorm) - TypeORM integration. Effect v3.
-- [jessekelly881/effect-idb](https://github.com/jessekelly881/effect-idb) - IndexedDB wrapper. Effect v3.
-- [juemrami/effect-idb](https://github.com/juemrami/effect-idb) - IndexedDB wrapper with a transaction API. Effect v3.
 - [jbt95/effect-kv](https://github.com/jbt95/effect-kv) - Cloudflare KV wrapper.
 - [jpb06/effect-cloudflare-r2-layer](https://github.com/jpb06/effect-cloudflare-r2-layer) - Layer for Cloudflare R2 storage.
 - [Cortex](https://cortex-vector.vercel.app) - Effect-native ORM for vector databases.
-- [nounder/effect-memfs](https://github.com/nounder/effect-memfs) - In-memory file system for mocking and tests.
 - [Lucas-Bur/effect-memfs](https://github.com/Lucas-Bur/effect-memfs) - Platform-agnostic in-memory file system. Effect v4.
 - [leonitousconforti/eftar](https://github.com/leonitousconforti/eftar) - GNU ustar tar implementation on Effect streams.
 
@@ -346,30 +254,21 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [michaelshimeles/self-sync](https://github.com/michaelshimeles/self-sync) - Sync engine for SvelteKit with reactive IndexedDB state, WebSockets, and PostgreSQL or MySQL adapters.
 - [typeonce-dev/sync-engine-web](https://github.com/typeonce-dev/sync-engine-web) - Sync engine on React, Web Workers, Effect, and Loro.
 - [kevmodrome/tablinum](https://github.com/kevmodrome/tablinum) - Local-first data layer backed by Nostr.
-- [dxos/dxos](https://github.com/dxos/dxos) - Local-first platform and the Composer workspace app. Its ECHO database uses Effect Schema. Publishes `@dxos/effect`. Effect v3.
 - [humanlayer/effect-durable-streams](https://github.com/humanlayer/effect-durable-streams) - Durable Streams protocol server as a portable Effect v4 app with swappable platform Layers.
 
 ### Messaging, jobs, workflows, and actors
 
-- [spiko-tech/effect-messaging](https://github.com/spiko-tech/effect-messaging) - Message broker toolkit with AMQP and NATS packages. Effect v3.
-- [floydspace/effect-kafka](https://github.com/floydspace/effect-kafka) - Kafka producers and consumers. [Docs](https://floydspace.github.io/effect-kafka).
 - [TeamWarp/effect-mq](https://github.com/TeamWarp/effect-mq) - Background jobs with schema-first definitions, a worker runtime, and a PostgreSQL store inside your Drizzle schema. Effect v4.
-- [erikshestopal/effect-inngest](https://github.com/erikshestopal/effect-inngest) - Durable workflows with Inngest, Effect-native steps, and Layer injection. Effect v3.
+- [erikshestopal/effect-inngest](https://github.com/erikshestopal/effect-inngest) - Durable workflows with Inngest, Effect-native steps, and Layer injection.
 - [fdarian/effect-hatchet](https://github.com/fdarian/effect-hatchet) - Hatchet bindings with an in-memory implementation for tests.
 - [tim-smart/effect-genserver](https://github.com/tim-smart/effect-genserver) - GenServer-style actors that work with cluster, RPC, or Atom.
 - [cevr/effect-encore](https://github.com/cevr/effect-encore) - Declarative actors and durable workflows for `@effect/cluster`. Effect v4.
 - [crosshatch/liminal](https://github.com/crosshatch/liminal) - Effect, actors, and Cloudflare.
 - [rivetkit/effect](https://www.npmjs.com/package/@rivetkit/effect) - Effect SDK for Rivet actors. Effect v4.
 - [golemcloud/effect-golem](https://github.com/golemcloud/effect-golem) - Author durable Golem agents with Effect v4.
-- [PaulJPhilp/effect-actor](https://github.com/PaulJPhilp/effect-actor) - Actor model on Effect.
-- [CodeForBreakfast/eventsourcing](https://github.com/CodeForBreakfast/eventsourcing) - Event sourcing library on Effect, with `bun-test-effect` and ESLint packages in the same repo. Effect v3.
-- [ReventlessDev/reventless-core](https://github.com/ReventlessDev/reventless-core) - Event-sourced CQRS framework in ReScript with an Effect package. Effect v3.
-- [embedded-insurance/diachronic](https://github.com/embedded-insurance/diachronic) - Evolving durable programs on Temporal with Effect Schema. Last updated 2024.
-- [emre-yildiz-dev/effect-graph](https://github.com/emre-yildiz-dev/effect-graph) - Superstep graph engine with typed state, reducers, routing, and human-in-the-loop. Effect v3.
+- [CodeForBreakfast/eventsourcing](https://github.com/CodeForBreakfast/eventsourcing) - Event sourcing library on Effect, with `bun-test-effect` and ESLint packages in the same repo.
 - [Mufraggi/effect-workflow-viz](https://github.com/Mufraggi/effect-workflow-viz) - Remix dashboard for visualizing `@effect/workflow` runs.
-- [sellooh/effect-cluster-via-sst](https://github.com/sellooh/effect-cluster-via-sst) - Effect Cluster deployed with the SST Cluster component.
 - [tim-smart/cluster-docker](https://github.com/tim-smart/cluster-docker) - Effect Cluster running in Docker.
-- [Effect-Deprecated/query](https://github.com/Effect-Deprecated/query) - Request batching and caching from Effect 2, now built into core. Archived.
 
 ### Cloud and infrastructure
 
@@ -379,7 +278,6 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [floydspace/effect-aws](https://github.com/floydspace/effect-aws) - AWS SDK clients and a Lambda handler wrapped as Effect services. Effect v3. [Docs](https://floydspace.github.io/effect-aws).
 - [kondaurovDev/aws-sdk](https://github.com/kondaurovDev/aws-sdk) - Generates an AWS SDK wrapper for Effect.
 - [kondaurovDev/effortless-aws](https://github.com/kondaurovDev/effortless-aws) - Code-first serverless framework that derives AWS infrastructure from handlers.
-- [floydspace/aws-lambda-effect-runtime](https://github.com/floydspace/aws-lambda-effect-runtime) - Experimental custom Lambda runtime for Effect.
 - [danieljvdm/effect-cf](https://github.com/danieljvdm/effect-cf) - Primitives for Cloudflare Workers and bindings. Effect v4.
 - [jbt95/effect-cf](https://github.com/jbt95/effect-cf) - Typed clients for Cloudflare Workers with schema validation.
 - [nr1brolyfan/effectful-cloudflare](https://github.com/nr1brolyfan/effectful-cloudflare) - Interact with Cloudflare resources. Effect v4.
@@ -388,17 +286,13 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [acoyfellow/lab](https://github.com/acoyfellow/lab) - Sandboxed isolates on Cloudflare Workers with typed capabilities.
 - [jonbeckman/cf-container-orchestrator](https://github.com/jonbeckman/cf-container-orchestrator) - Orchestrate Cloudflare Containers with replica sets and restart policies.
 - [siebix-studio/effect-reusables](https://github.com/siebix-studio/effect-reusables) - Cloudflare Browser Run and Resend services. Effect v4.
-- [pierskarsenbarg/effect-pulumi](https://github.com/pierskarsenbarg/effect-pulumi) - Effect composability for Pulumi programs. Effect v3.
 - [entropitor/terraform-providers](https://github.com/entropitor/terraform-providers) - Write Terraform providers in TypeScript with Effect. [Blog post](https://entropitor.com/blog/terraform-provider-in-typescript).
-- [triargos/effect-hcloud](https://github.com/triargos/effect-hcloud) - Hetzner Cloud client. Effect v3.
 - [leonitousconforti/the-moby-effect](https://github.com/leonitousconforti/the-moby-effect) - Moby and Docker API client. Effect v4.
 - [leonitousconforti/the-wireguard-effect](https://github.com/leonitousconforti/the-wireguard-effect) - Cross-platform WireGuard client on wireguard-go. Effect v4.
 - [leonitousconforti/efffrida](https://github.com/leonitousconforti/efffrida) - Compatibility layers between Frida's JavaScript API and Effect packages.
 - [flux-control-solutions/Effect-modbus-rs](https://github.com/flux-control-solutions/Effect-modbus-rs) - Modbus communication over Rust napi bindings. Effect v4.
-- [fiws/effect-libreoffice](https://github.com/fiws/effect-libreoffice) - Convert documents through LibreOffice. Effect v3.
 - [jpb06/effect-github-actions-layer](https://github.com/jpb06/effect-github-actions-layer) - Layer for the GitHub Actions toolkit.
 - [jpb06/effect-octokit-layer](https://github.com/jpb06/effect-octokit-layer) - Layer for Octokit.
-- [Effect-Deprecated/process](https://github.com/Effect-Deprecated/process) - Child process library ported from zio-process. Archived.
 
 ### AI, agents, and MCP
 
@@ -410,27 +304,17 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [clavia-labs/tardigrade](https://github.com/clavia-labs/tardigrade) - Framework for durable, modular agents.
 - [tylerjrbuell/reactive-agents-ts](https://github.com/tylerjrbuell/reactive-agents-ts) - Composable LLM agent framework where the same code runs in every runtime.
 - [spiritledsoftware/commissary](https://github.com/spiritledsoftware/commissary) - Composable agent builder. Effect v4.
-- [PaulJPhilp/EffectiveAgent](https://github.com/PaulJPhilp/EffectiveAgent) - Application framework for concurrent AI agents.
-- [jambudipa/dynamic-flow](https://github.com/jambudipa/dynamic-flow) - Generate complete LLM execution graphs at runtime.
 - [semantiv-ai/effectful](https://github.com/semantiv-ai/effectful) - LLM task pipelines compiled to Effect programs.
-- [ai-task-runner-effect](https://www.npmjs.com/package/ai-task-runner-effect) - Runner for named AI tasks with validator-agnostic codecs. Effect v3.
-- [hypen-space/gloop-effect](https://www.npmjs.com/package/@hypen-space/gloop-effect) - Typed, observable agent loops on gloop-loop. Effect v3.
 - [saiashirwad/roop](https://github.com/saiashirwad/roop) - Coding agent runtime built on Effect.
-- [kpritam/cliq](https://github.com/kpritam/cliq) - CLI coding agent with multiple providers, written to show how coding agents work. [Docs](https://kpritam.github.io/cliq).
 - [lvndry/jazz](https://github.com/lvndry/jazz) - CLI for creating autonomous agents with real-world capabilities.
 - [betalyra/cuttlekit](https://github.com/betalyra/cuttlekit) - Generative UI toolkit that streams LLM-built interfaces into a sandbox.
 - [kitlangton/rune](https://github.com/kitlangton/rune) - Give an agent one confined TypeScript-shaped code tool instead of a tool catalog.
 - [acoyfellow/effect-agents](https://github.com/acoyfellow/effect-agents) - Five example agents on Effect v4 with one local and one Cloudflare entrypoint. [Site](https://effect-agents.coey.dev).
-- [claude-code-effect](https://www.npmjs.com/package/claude-code-effect) - SDK for the Claude Code CLI with typed `generateText` and `generateObject`. Effect v3.
 - [mpsuesser/effect-claudecode](https://github.com/mpsuesser/effect-claudecode) - Write Claude Code plugins with Effect v4: hooks, skills, settings, and MCP servers.
 - [k3dom/pi-plugins](https://github.com/k3dom/pi-plugins) - Single-purpose plugins for the pi agent harness built on Effect.
-- [mannyc1/pi-agent-effect](https://www.npmjs.com/package/@mannyc1/pi-agent-effect) - Effect platform adapter for pi-agent-core. Effect v3.
 - [egriff38/effect-herdr](https://github.com/egriff38/effect-herdr) - SDK for the herdr terminal agent multiplexer. Effect v4.
 - [tim-smart/effect-mcp](https://github.com/tim-smart/effect-mcp) - MCP server that gives agents Effect documentation search. Published as `effect-mcp` and as a Docker image.
 - [niklaserik/effect-mcp](https://github.com/niklaserik/effect-mcp) - Another MCP server for fetching Effect docs.
-- [Kastalien-Research/mcp-effect-sdk](https://github.com/Kastalien-Research/mcp-effect-sdk) - MCP SDK for the 2025-07-28 spec written with Effect. Effect v3.
-- [paoloricciuti/tmcp](https://github.com/paoloricciuti/tmcp) - Framework-agnostic MCP SDK with an `@tmcp/adapter-effect` schema adapter. Effect v3.
-- [glassBead-tc/effect-airtable-mcp](https://github.com/glassBead-tc/effect-airtable-mcp) - Airtable MCP server. Effect v3.
 - [cipher-rc5/firecrawl-mcp-effect](https://github.com/cipher-rc5/firecrawl-mcp-effect) - Self-hostable Firecrawl MCP server.
 - [seanwessmith/bun-mcp](https://github.com/seanwessmith/bun-mcp) - MCP server for Bun documentation.
 - [dearlordylord/huly-mcp](https://github.com/dearlordylord/huly-mcp) - MCP server and CLI for the Huly platform.
@@ -445,11 +329,8 @@ Published from the Effect-TS/effect monorepo. Versions given are the Effect 3 li
 - [erayack/effect-gpt](https://github.com/erayack/effect-gpt) - Transformer LLM built from scratch with Effect, covering tokenization, training, and inference.
 - [mikearnaldi/effect-torch](https://github.com/mikearnaldi/effect-torch) - Experimental tensor library with a Rust backend on candle, by the Effect author.
 - [lloydrichards/edu_effect-rag-builder](https://github.com/lloydrichards/edu_effect-rag-builder) - RAG prototype with ChromaDB.
-- [grzegorz-bielski/extrospec](https://github.com/grzegorz-bielski/extrospec) - Toy RAG CLI on LlamaIndex. Last updated 2024.
 
 ### Agent skills and rules
-
-Files that teach coding assistants (Claude Code, Codex, OpenCode, Cursor, pi) how to write Effect.
 
 - [Effect-TS/skills](https://github.com/Effect-TS/skills) - Official skills for skill-aware coding agents, including the [effect-v3-to-v4](https://www.skills.sh/effect-ts/skills/effect-v3-to-v4) migration skill.
 - [kitlangton/skills](https://github.com/kitlangton/skills) - Kit Langton's local Effect skill. Pairs with Effect Solutions under Resources.
@@ -477,11 +358,9 @@ Files that teach coding assistants (Claude Code, Codex, OpenCode, Cursor, pi) ho
 ### Testing
 
 - [tatemz/effect-bdd](https://github.com/tatemz/effect-bdd) - Runner for Gherkin `.feature` files. Effect v4.
-- [cevr/effect-bun-test](https://github.com/cevr/effect-bun-test) - Test helpers for `bun test`. Effect v3.
-- [Jobflow-io/effect-playwright](https://github.com/Jobflow-io/effect-playwright) - Playwright as Effect services and layers for browser automation and scraping. Effect v3.
+- [cevr/effect-bun-test](https://github.com/cevr/effect-bun-test) - Test helpers for `bun test`.
 - [wezter96/spana](https://github.com/wezter96/spana) - End-to-end testing across React Native and web from one test suite.
 - [middle-ages/effect-ts-laws](https://github.com/middle-ages/effect-ts-laws) - Property-based law tests for type class instances.
-- [isthatcentered/testing-effect-ts-lightning-talk-examples](https://github.com/isthatcentered/testing-effect-ts-lightning-talk-examples) - Code from an Effect Days 2025 lightning talk on testing.
 - [Effect-TS/effect](https://github.com/Effect-TS/effect/tree/main/packages/tools/doctest) - `@effect/doctest` runs the examples in JSDoc as tests. Effect v4.
 
 ### Logging, tracing, and observability
@@ -491,27 +370,19 @@ Files that teach coding assistants (Claude Code, Codex, OpenCode, Cursor, pi) ho
 - [Necmttn/livetrace](https://github.com/Necmttn/livetrace) - Stream Effect spans from any backend to React UIs.
 - [DanielFGray/effect-devtui](https://github.com/DanielFGray/effect-devtui) - Terminal UI for Effect DevTools: traces, spans, and metrics.
 - [jagreehal/effect-analyzer](https://github.com/jagreehal/effect-analyzer) - Static analysis that extracts structure, computes complexity, and draws diagrams from Effect code. Effect v4.
-- [sukovanej/effect-log](https://github.com/sukovanej/effect-log) - Logger implementations. Effect v3, last updated 2024.
-- [rashedInt32/effect-logger-pretty](https://github.com/rashedInt32/effect-logger-pretty) - Colored console logger, silent in production.
-- [IMax153/effect-ts-logging](https://github.com/IMax153/effect-ts-logging) - Logging with correlation and pluggable backends. Last updated 2023.
 - [cevr/effect-wide-event](https://github.com/cevr/effect-wide-event) - One structured event per request. Effect v4.
 - [just-be-dev/evlog-effect](https://github.com/just-be-dev/evlog-effect) - Effect bindings for evlog. Effect v4.
-- [observe-ts/observe-ts](https://github.com/observe-ts/observe-ts) - Structural observability for Effect programs.
 - [atrim-ai/effect-span-tree-demo](https://github.com/atrim-ai/effect-span-tree-demo) - Visualize deeply nested traces with path tracking.
-- [jrkienle/posthog-effect](https://www.npmjs.com/package/@jrkienle/posthog-effect) - PostHog bindings. Effect v3.
 - [Lensflare](https://lensflare.dev) - macOS development observability stack for humans and agents.
-- [Effect-Deprecated/otel](https://github.com/Effect-Deprecated/otel) - OpenTelemetry from Effect 2, replaced by `@effect/opentelemetry`. Archived.
 
 ### CLI and terminal
 
 - [lloydrichards/effect-boxes](https://github.com/lloydrichards/effect-boxes) - Layout system for terminal UIs with Flex, Container, and Grid combinators. Effect v4. [Docs](https://effect-boxes.lloydrichards.dev).
-- [PaulJPhilp/effect-cli-tui](https://github.com/PaulJPhilp/effect-cli-tui) - Interactive prompts and display utilities on top of `@effect/cli`.
 - [stromseng/effective-progress](https://github.com/stromseng/effective-progress) - Progress bar for CLIs.
 - [sogoiii/effect-streamdown-terminal](https://github.com/sogoiii/effect-streamdown-terminal) - Streaming markdown renderer for terminals.
 - [wolfcola/treeshake-check](https://www.npmjs.com/package/@wolfcola/treeshake-check) - Tree-shakeability analyzer built on `@effect/cli`.
 - [davidnussio/envsec](https://github.com/davidnussio/envsec) - Secrets manager backed by native OS credential stores.
 - [ccntrq/git-jira-branch](https://github.com/ccntrq/git-jira-branch) - Manage git branches for Jira tickets.
-- [Effect-TS/figlet](https://github.com/Effect-TS/figlet) - FIGlet font parser and renderer. Last updated 2024.
 
 ### Service SDKs and API clients
 
@@ -520,40 +391,230 @@ Files that teach coding assistants (Claude Code, Codex, OpenCode, Cursor, pi) ho
 - [tim-smart/dfx](https://github.com/tim-smart/dfx) - Discord library with gateway, REST, and interactions.
 - [grom-dev/effect-tg](https://github.com/grom-dev/effect-tg) - Telegram bot library.
 - [kondaurovDev/tg-bot-sdk](https://github.com/kondaurovDev/tg-bot-sdk) - Telegram Bot API types and client.
-- [rubywwwilde/Teleffect](https://github.com/rubywwwilde/Teleffect) - Telegram Bot API client.
-- [blissito/whatsapp-sdk](https://github.com/blissito/whatsapp-sdk) - WhatsApp Business API SDK.
 - [tobimori/effect-attio](https://github.com/tobimori/effect-attio) - Attio REST API on Effect's HttpClient.
-- [PaulJPhilp/effect-notion](https://github.com/PaulJPhilp/effect-notion) - Proxy server for the Notion API.
-- [effect-stripe](https://www.npmjs.com/package/effect-stripe) - Stripe wrapper. Effect v3.
-- [Malvolio/printify-effect](https://github.com/Malvolio/printify-effect) - Printify print-on-demand API.
 - [mpsuesser/effect-prodigi](https://github.com/mpsuesser/effect-prodigi) - Prodigi print-on-demand API. Effect v4.
-- [betalyra/wordpress-effect](https://github.com/betalyra/wordpress-effect) - WordPress client. Effect v3.
 - [zuub-don/tutela](https://github.com/zuub-don/tutela) - Unofficial SDK for Guardian Connect insurance APIs.
-- [kevinmichaelchen/book-effect](https://github.com/kevinmichaelchen/book-effect) - Book metadata from Hardcover, Open Library, and Google Books.
-- [tvsudhir2/edlink-effect-sdk](https://github.com/tvsudhir2/edlink-effect-sdk) - Edlink SDK. Effect v3.
 - [mannyc2/nyc-transit-kit](https://github.com/mannyc2/nyc-transit-kit) - NYC and MTA transit data APIs on Bun.
 - [opsydyn/postcodesio-effect-client](https://github.com/opsydyn/postcodesio-effect-client) - Client for postcodes.io. Effect v4.
 - [triargos/sdks](https://github.com/triargos/sdks) - Procurat client. Supports Effect v3 and v4.
-- [Kensei-Kimoto/kintone-effect-schema](https://github.com/Kensei-Kimoto/kintone-effect-schema) - Effect Schemas for kintone records. Effect v3.
+- [Kensei-Kimoto/kintone-effect-schema](https://github.com/Kensei-Kimoto/kintone-effect-schema) - Effect Schemas for kintone records.
 - [mmlngl/effect-messagekit](https://github.com/mmlngl/effect-messagekit) - Toolkit for building and testing messaging app integrations.
 - [tim-smart/effect-obsidian](https://github.com/tim-smart/effect-obsidian) - Write Obsidian plugins with Effect.
 
 ### Authentication and authorization
 
-- [alex-golubev/better-auth-effect-adapter](https://github.com/alex-golubev/better-auth-effect-adapter) - Better Auth database adapter for `@effect/sql`. Effect v3.
+- [alex-golubev/better-auth-effect-adapter](https://github.com/alex-golubev/better-auth-effect-adapter) - Better Auth database adapter for `@effect/sql`.
 - [leonitousconforti/effect-oidc](https://github.com/leonitousconforti/effect-oidc) - OIDC provider primitives, JWT and JWKS, and HttpApi resource-server middleware. Effect v4.
 - [nr1brolyfan/effect-auth-poc](https://github.com/nr1brolyfan/effect-auth-poc) - Authentication toolkit proof of concept.
-- [betalyra/sorry-dave](https://github.com/betalyra/sorry-dave) - Authorization library.
 - [just-be-dev/gatehouse-effect](https://github.com/just-be-dev/gatehouse-effect) - RBAC, ABAC, and ReBAC authorization, ported from gatehouse-ts.
 - [nmnmcc/ability](https://github.com/nmnmcc/ability) - CASL-inspired permission checks.
 
 ### Blockchain
 
-- [evmts/voltaire](https://github.com/evmts/voltaire) - Ethereum primitives with a `voltaire-effect` package for typed contract calls. Effect v3.
 - [julia-script/evm-effect](https://github.com/julia-script/evm-effect) - Ethereum Virtual Machine implementation in TypeScript built for debuggability. Effect v4.
 - [crosshatch/crosshatch](https://github.com/crosshatch/crosshatch) - x402 payments across EVM and Solana with stablecoins.
 - [PaulRBerg/prb-effect](https://github.com/PaulRBerg/prb-effect) - Utilities for Web3, Next.js, and XState.
 - [xstelea/radix-web3.js](https://github.com/xstelea/radix-web3.js) - Radix wallet, gateway, and transaction packages with `@radix-effects/sbor`. Effect v4.
+
+## Effect v3 legacy
+
+Kept because Effect 3 is still in use. Nothing here should be picked for a new Effect 4 project without checking for a v4 release first.
+
+### Packages merged into Effect v4
+
+- [@effect/platform](https://www.npmjs.com/package/@effect/platform) - Runtime-agnostic HTTP client and server, file system, terminal, workers, and key-value store interfaces. In v4: `effect/unstable/http`, `httpapi`, `socket`, `workers`, and `process`.
+- [@effect/rpc](https://www.npmjs.com/package/@effect/rpc) - Schema-typed RPC over HTTP, WebSocket, or workers. In v4: `effect/unstable/rpc`.
+- [@effect/cluster](https://www.npmjs.com/package/@effect/cluster) - Entities, sharding, and messaging across processes. In v4: `effect/unstable/cluster`.
+- [@effect/workflow](https://www.npmjs.com/package/@effect/workflow) - Durable workflows on top of cluster. In v4: `effect/unstable/workflow`.
+- [@effect/cli](https://www.npmjs.com/package/@effect/cli) - Command-line parsing, subcommands, prompts, and help generation. In v4: `effect/unstable/cli`.
+- [@effect/printer](https://www.npmjs.com/package/@effect/printer) - Pretty-printer for documents, with [@effect/printer-ansi](https://www.npmjs.com/package/@effect/printer-ansi) for terminal colors. Effect v3 only.
+- [@effect/sql](https://www.npmjs.com/package/@effect/sql) - SQL client, migrations, and schema-typed queries. In v4: `effect/unstable/sql`.
+- [@effect/sql-drizzle](https://www.npmjs.com/package/@effect/sql-drizzle) - Run Drizzle queries through `@effect/sql`. Effect v3 only. Drizzle itself now ships an `@effect/sql-pg` driver, listed under Databases and storage.
+- [@effect/sql-kysely](https://www.npmjs.com/package/@effect/sql-kysely) - Run Kysely queries through `@effect/sql`. Effect v3 only.
+- [@effect/ai](https://www.npmjs.com/package/@effect/ai) - Provider-agnostic language model, tool calling, and embeddings API. In v4: `effect/unstable/ai`.
+- [@effect/ai-google](https://www.npmjs.com/package/@effect/ai-google) - Google Gemini provider. Effect v3 only.
+- [@effect/ai-amazon-bedrock](https://www.npmjs.com/package/@effect/ai-amazon-bedrock) - Amazon Bedrock provider. Effect v3 only.
+- [@effect/typeclass](https://www.npmjs.com/package/@effect/typeclass) - Functor, Monad, Semigroup, and other type classes. Effect v3 only.
+- [@effect/experimental](https://www.npmjs.com/package/@effect/experimental) - Modules under trial before they move to core, such as DevTools, event logs, and persistence. In v4: `effect/unstable/devtools`, `eventlog`, and `persistence`.
+- [tim-smart/effect-atom](https://github.com/tim-smart/effect-atom) - Reactive state for Effect v3, published as `@effect-atom/atom` with React, Solid, Vue, and LiveStore bindings. In v4 the same design ships in core as `@effect/atom-*`.
+
+### Libraries for Effect v3
+
+Peer dependency stops at 3.x, or no commits since before the Effect 4 release candidates.
+
+#### State management and UI
+
+- [ericc-ch/effect-atom-solid](https://github.com/ericc-ch/effect-atom-solid) - SolidJS bindings for effect-atom. Effect v3.
+- [TylorS/typed](https://github.com/TylorS/typed) - Web application framework on Effect with push-based streams, routing, and templating. Last updated 2025.
+- [VasilVelikov00/effective-ui](https://github.com/VasilVelikov00/effective-ui) - Composable UI framework built on Effect. Last updated 2025.
+- [ToliaGuy/reffect](https://github.com/ToliaGuy/reffect) - React bindings for Effect. Last updated 2025.
+- [81reap/react-effect](https://github.com/81reap/react-effect) - Package for full-stack React and Effect applications. Last updated 2025.
+- [pkishorez/use-effect-ts](https://github.com/pkishorez/use-effect-ts) - React hooks for running Effects. Last updated 2025.
+- [nemmtor/injectio](https://github.com/nemmtor/injectio) - Turn React components into Effects that can return values, for modals and dialogs opened from code. Last updated 2025.
+- [savkelita/tea-effect](https://github.com/savkelita/tea-effect) - The Elm Architecture for TypeScript with Effect. Effect v3.
+- [derrickbeining/effect-mvu](https://github.com/derrickbeining/effect-mvu) - Port of the Elm architecture to Effect. Last updated 2023.
+- [TylorS/typed-lazy-ref](https://github.com/TylorS/typed-lazy-ref) - Lazily evaluated, streaming state management. Last updated 2025.
+- [TylorS/typed-async-data](https://github.com/TylorS/typed-async-data) - Loading, success, failure, and optimistic states for async data. Last updated 2025.
+- [TylorS/typed-navigation](https://github.com/TylorS/typed-navigation) - Browser navigation on the Navigation API with a History API fallback. Last updated 2025.
+- [TylorS/typed-route](https://github.com/TylorS/typed-route) - Type-safe, bidirectional route matching and interpolation on Effect Schema. Last updated 2025.
+- [lucas-barake/effect-form](https://github.com/lucas-barake/effect-form) - Forms with Effect Schema validation and React bindings. Effect v3.
+- [hannoeru/formik-effect-schema](https://github.com/hannoeru/formik-effect-schema) - Effect Schema validation for Formik. Last updated 2024.
+
+#### Framework integrations
+
+- [mcrovero/effect-nextjs](https://github.com/mcrovero/effect-nextjs) - Typed helpers for Next.js App Router pages, layouts, server components, and actions. Effect v3.
+- [khanetor/effect-remix](https://github.com/khanetor/effect-remix) - Adapters for using Effect in Remix loaders and actions. Last updated 2024.
+- [JonahPlusPlus/solid-effect](https://github.com/JonahPlusPlus/solid-effect) - Utilities for using Effect in SolidJS. Last updated 2024.
+- [devx-op/effectify](https://github.com/devx-op/effectify) - Monorepo of integrations: Solid bindings for effect-atom, Better Auth for Node, and more. Effect v3.
+- [withstudiocms/studiocms](https://github.com/withstudiocms/studiocms) - Astro headless CMS whose `@withstudiocms/effect` package wraps Effect for Astro integrations. Effect v3.
+- [nounder/effect-start](https://github.com/nounder/effect-start) - Declarative full-stack apps with Effect. Effect v3.
+- [adamgoose/raycast-effect](https://github.com/adamgoose/raycast-effect) - Write Raycast extensions with Effect. Last updated 2025.
+- [mikearnaldi/vite-remix-effect](https://github.com/mikearnaldi/vite-remix-effect) - Remix on Vite with Effect, by the Effect author. Last updated 2023.
+- [mikearnaldi/effect-remix-stream](https://github.com/mikearnaldi/effect-remix-stream) - Streaming responses from Remix with Effect. Last updated 2024.
+- [Effect-Community/react](https://github.com/Effect-Community/react) - React integration with Query and Effect from the Effect 2 era. Last updated 2023.
+
+#### HTTP, RPC, and API
+
+- [sukovanej/effect-http](https://github.com/sukovanej/effect-http) - Declarative HTTP APIs with OpenAPI generation. Predates `HttpApi` in `@effect/platform`, which covers the same ground. Effect v3.
+- [bastikohn/effect-grpc](https://github.com/bastikohn/effect-grpc) - gRPC with a `protoc` plugin that generates Effect services. Effect v3.
+- [semyenov/effect-graphql](https://www.npmjs.com/package/@semyenov/effect-graphql) - Type-safe GraphQL schemas and resolvers with Effect Schema. Effect v3.
+- [nrf110/effect-gql](https://github.com/nrf110/effect-gql) - Experimental GraphQL framework for Effect. Effect v3.
+- [pothos-plugin-effect](https://www.npmjs.com/package/pothos-plugin-effect) - Pothos GraphQL plugin for resolvers that return Effects. Effect v3.
+- [Makisuo/effect-rpc-tanstack-devtools](https://github.com/Makisuo/effect-rpc-tanstack-devtools) - TanStack Devtools panel for Effect RPC requests and timings. Last updated 2025.
+- [tim-smart/effect-http](https://github.com/tim-smart/effect-http) - Early HTTP toolkit that became `@effect/platform`. Last updated 2023.
+
+#### OpenAPI and code generation
+
+- [fortanix/openapi-to-effect](https://github.com/fortanix/openapi-to-effect) - Generate Effect Schema definitions from an OpenAPI document. Effect v3.
+- [davidgoli/effect-openapi-server-gen](https://github.com/davidgoli/effect-openapi-server-gen) - Generate an HttpApi server from an OpenAPI schema. Last updated 2025.
+- [omar-dulaimi/supawatch](https://github.com/omar-dulaimi/supawatch) - Compiles a PostgreSQL schema into validators, types, and API layers, with an Effect target. Effect v3.
+- [fasciajs/fascia](https://github.com/fasciajs/fascia) - Describe a schema once, emit zod, arktype, effect, or valibot, and OpenAPI and JSON Schema. Effect v3.
+
+#### Schema, data types, and utilities
+
+- [jessekelly881/effect-schema-compilers](https://github.com/jessekelly881/effect-schema-compilers) - Compile Effect Schemas to fakers, empty values, and semigroups. Last updated 2024.
+- [jessekelly881/effect-types](https://github.com/jessekelly881/effect-types) - Schemas organized by data type. Last updated 2024.
+- [AMar4enko/effect-schema-compiler](https://github.com/AMar4enko/effect-schema-compiler) - Ergonomic compiler for Effect Schema ASTs. Effect v3.
+- [AMar4enko/effect-schema-avro](https://github.com/AMar4enko/effect-schema-avro) - Avro codec for Effect Schema. Last updated 2025.
+- [jessekelly881/effect-yaml](https://github.com/jessekelly881/effect-yaml) - YAML parsing helpers. Effect v3.
+- [srinitude/effect-json-schema](https://github.com/srinitude/effect-json-schema) - Effect Schema adapter for Standard JSON Schema V1. Effect v3.
+- [harrysolovay/standard-json-schema](https://github.com/harrysolovay/standard-json-schema) - Turn Standard Schema types, Effect Schema included, into JSON Schema. Last updated 2025.
+- [middle-ages/effect-schema-viz](https://github.com/middle-ages/effect-schema-viz) - Render Effect Schemas as Graphviz diagrams. Effect v3.
+- [dudeofawesome/effect-schemas](https://github.com/dudeofawesome/effect-schemas) - Common data schemas. Effect v3.
+- [TylorS/typed-id](https://github.com/TylorS/typed-id) - UUID, NanoID, and ULID generation. Last updated 2025.
+- [TylorS/templeffect](https://github.com/TylorS/templeffect) - Templating with Effect Schema parameter validation and nesting. Last updated 2025.
+- [PaulJPhilp/effect-mdx](https://github.com/PaulJPhilp/effect-mdx) - Parse, compile, and manipulate MDX. Last updated 2025.
+- [PaulJPhilp/effect-regex](https://github.com/PaulJPhilp/effect-regex) - Regex processing CLI and library. Last updated 2025.
+- [PaulJPhilp/effect-env](https://github.com/PaulJPhilp/effect-env) - Environment variables with schema validation. Last updated 2025.
+- [emergente-labs/effect-env](https://github.com/emergente-labs/effect-env) - Environment variable configuration with Effect. Effect v3.
+- [hychen/effect-builder](https://github.com/hychen/effect-builder) - Immutable builder pattern with runtime validation. Last updated 2024.
+- [sukovanej/effect-monocle](https://github.com/sukovanej/effect-monocle) - Port of monocle-ts optics. Effect v3, last updated 2024. Effect v3.
+- [middle-ages/effect-ts-folds](https://github.com/middle-ages/effect-ts-folds) - Recursion schemes for Effect. Effect v3.
+- [nipakke/effect-pantry](https://github.com/nipakke/effect-pantry) - Add-ons for Node.js apps such as typed events. Effect v3.
+- [lishaduck/effect-utils](https://github.com/lishaduck/effect-utils) - Small utilities for Effect. Last updated 2025.
+- [embedded-insurance/effect-use](https://github.com/embedded-insurance/effect-use) - Collection of Effect services. Last updated 2025.
+- [limwa/effect-bits](https://www.npmjs.com/package/@limwa/effect-bits) - Utilities for working with Effect. Effect v3.
+- [konkerdotdev/effect-ts-prelude](https://github.com/konkerdotdev/effect-ts-prelude) - Prelude re-exports. Effect v3, last updated 2024. Effect v3.
+- [jpb06/effect-errors](https://github.com/jpb06/effect-errors) - Pretty error reporting with source snippets and spans. Effect v3.
+- [btravstack/unthrown](https://github.com/btravstack/unthrown) - Errors as values with a separate defect channel, with an Effect adapter. Effect v3.
+- [spion/effect-tagged-contextual-error](https://github.com/spion/effect-tagged-contextual-error) - Tagged errors with context, inspired by Rust's anyhow. Last updated 2025.
+- [harrysolovay/toyffect](https://github.com/harrysolovay/toyffect) - Toy re-implementation of `Effect.gen` and `Context.Tag` for learning how Effect works. Last updated 2025.
+- [clayroach/effect-sugar](https://github.com/clayroach/effect-sugar) - For-comprehension style `gen` blocks via esbuild, tsc, and TS plugin transforms. Last updated 2025.
+
+#### Databases and storage
+
+- [emergente-labs/effect-sql-model](https://github.com/emergente-labs/effect-sql-model) - Compile Effect Schema and `@effect/sql` model definitions into Drizzle tables. Effect v3.
+- [effect-sql-kysely](https://www.npmjs.com/package/effect-sql-kysely) - Kysely with `@effect/sql`, typed queries. Effect v3.
+- [Fredx87/effect-kysely](https://github.com/Fredx87/effect-kysely) - Kysely adapter. Last updated 2024.
+- [pigoz/effect-sql](https://github.com/pigoz/effect-sql) - Relational databases with Effect, from before `@effect/sql`. Last updated 2025.
+- [tim-smart/sqlfx](https://github.com/tim-smart/sqlfx) - The SQL toolkit that became `@effect/sql`. Last updated 2024.
+- [samuelho-dev/prisma-effect-kysely](https://github.com/samuelho-dev/prisma-effect-kysely) - Generate Kysely-compatible Effect Schemas from Prisma models. Effect v3.
+- [jessekelly881/zenstack-effect](https://github.com/jessekelly881/zenstack-effect) - ZenStack plugin for Effect. Last updated 2025.
+- [akoenig/effect-sql-inline-migrations](https://www.npmjs.com/package/@akoenig/effect-sql-inline-migrations) - Migration loader that does not read the file system. Effect v3.
+- [doubleloop-io/effect-mongodb](https://github.com/doubleloop-io/effect-mongodb) - MongoDB toolkit with typed collections. Effect v3.
+- [Gialicus/effect-ts-mongodb](https://github.com/Gialicus/effect-ts-mongodb) - MongoDB driver wrapper. Last updated 2023.
+- [envoy1084/effect-redis](https://github.com/envoy1084/effect-redis) - Redis bindings with transactions and pipelines. Effect v3.
+- [Vortex-Dimension-Digital/effect-redis-bun](https://github.com/Vortex-Dimension-Digital/effect-redis-bun) - KeyValueStore implementation on Bun's Redis client. Effect v3.
+- [effect-supabase](https://www.npmjs.com/package/effect-supabase) - Supabase client wrapper. Effect v3.
+- [jys9962/effect-ts-typeorm](https://github.com/jys9962/effect-ts-typeorm) - TypeORM integration. Effect v3.
+- [jessekelly881/effect-idb](https://github.com/jessekelly881/effect-idb) - IndexedDB wrapper. Effect v3.
+- [juemrami/effect-idb](https://github.com/juemrami/effect-idb) - IndexedDB wrapper with a transaction API. Effect v3.
+- [nounder/effect-memfs](https://github.com/nounder/effect-memfs) - In-memory file system for mocking and tests. Last updated 2025.
+
+#### Local-first and sync
+
+- [dxos/dxos](https://github.com/dxos/dxos) - Local-first platform and the Composer workspace app. Its ECHO database uses Effect Schema. Publishes `@dxos/effect`. Effect v3.
+
+#### Messaging, jobs, workflows, and actors
+
+- [spiko-tech/effect-messaging](https://github.com/spiko-tech/effect-messaging) - Message broker toolkit with AMQP and NATS packages. Effect v3.
+- [floydspace/effect-kafka](https://github.com/floydspace/effect-kafka) - Kafka producers and consumers. [Docs](https://floydspace.github.io/effect-kafka). Last updated 2025.
+- [PaulJPhilp/effect-actor](https://github.com/PaulJPhilp/effect-actor) - Actor model on Effect. Last updated 2025.
+- [ReventlessDev/reventless-core](https://github.com/ReventlessDev/reventless-core) - Event-sourced CQRS framework in ReScript with an Effect package. Effect v3.
+- [embedded-insurance/diachronic](https://github.com/embedded-insurance/diachronic) - Evolving durable programs on Temporal with Effect Schema. Last updated 2024.
+- [emre-yildiz-dev/effect-graph](https://github.com/emre-yildiz-dev/effect-graph) - Superstep graph engine with typed state, reducers, routing, and human-in-the-loop. Effect v3.
+- [sellooh/effect-cluster-via-sst](https://github.com/sellooh/effect-cluster-via-sst) - Effect Cluster deployed with the SST Cluster component. Last updated 2025.
+- [Effect-Deprecated/query](https://github.com/Effect-Deprecated/query) - Request batching and caching from Effect 2, now built into core. Archived.
+
+#### Cloud and infrastructure
+
+- [floydspace/aws-lambda-effect-runtime](https://github.com/floydspace/aws-lambda-effect-runtime) - Experimental custom Lambda runtime for Effect. Last updated 2025.
+- [pierskarsenbarg/effect-pulumi](https://github.com/pierskarsenbarg/effect-pulumi) - Effect composability for Pulumi programs. Effect v3.
+- [triargos/effect-hcloud](https://github.com/triargos/effect-hcloud) - Hetzner Cloud client. Effect v3.
+- [fiws/effect-libreoffice](https://github.com/fiws/effect-libreoffice) - Convert documents through LibreOffice. Effect v3.
+- [Effect-Deprecated/process](https://github.com/Effect-Deprecated/process) - Child process library ported from zio-process. Archived.
+
+#### AI, agents, and MCP
+
+- [PaulJPhilp/EffectiveAgent](https://github.com/PaulJPhilp/EffectiveAgent) - Application framework for concurrent AI agents. Last updated 2025.
+- [jambudipa/dynamic-flow](https://github.com/jambudipa/dynamic-flow) - Generate complete LLM execution graphs at runtime. Last updated 2025.
+- [ai-task-runner-effect](https://www.npmjs.com/package/ai-task-runner-effect) - Runner for named AI tasks with validator-agnostic codecs. Effect v3.
+- [hypen-space/gloop-effect](https://www.npmjs.com/package/@hypen-space/gloop-effect) - Typed, observable agent loops on gloop-loop. Effect v3.
+- [kpritam/cliq](https://github.com/kpritam/cliq) - CLI coding agent with multiple providers, written to show how coding agents work. [Docs](https://kpritam.github.io/cliq). Last updated 2025.
+- [claude-code-effect](https://www.npmjs.com/package/claude-code-effect) - SDK for the Claude Code CLI with typed `generateText` and `generateObject`. Effect v3.
+- [mannyc1/pi-agent-effect](https://www.npmjs.com/package/@mannyc1/pi-agent-effect) - Effect platform adapter for pi-agent-core. Effect v3.
+- [Kastalien-Research/mcp-effect-sdk](https://github.com/Kastalien-Research/mcp-effect-sdk) - MCP SDK for the 2025-07-28 spec written with Effect. Effect v3.
+- [paoloricciuti/tmcp](https://github.com/paoloricciuti/tmcp) - Framework-agnostic MCP SDK with an `@tmcp/adapter-effect` schema adapter. Effect v3.
+- [glassBead-tc/effect-airtable-mcp](https://github.com/glassBead-tc/effect-airtable-mcp) - Airtable MCP server. Effect v3.
+- [grzegorz-bielski/extrospec](https://github.com/grzegorz-bielski/extrospec) - Toy RAG CLI on LlamaIndex. Last updated 2024.
+
+#### Testing
+
+- [Jobflow-io/effect-playwright](https://github.com/Jobflow-io/effect-playwright) - Playwright as Effect services and layers for browser automation and scraping. Effect v3.
+- [isthatcentered/testing-effect-ts-lightning-talk-examples](https://github.com/isthatcentered/testing-effect-ts-lightning-talk-examples) - Code from an Effect Days 2025 lightning talk on testing. Last updated 2025.
+
+#### Logging, tracing, and observability
+
+- [sukovanej/effect-log](https://github.com/sukovanej/effect-log) - Logger implementations. Effect v3, last updated 2024. Effect v3.
+- [rashedInt32/effect-logger-pretty](https://github.com/rashedInt32/effect-logger-pretty) - Colored console logger, silent in production. Last updated 2025.
+- [IMax153/effect-ts-logging](https://github.com/IMax153/effect-ts-logging) - Logging with correlation and pluggable backends. Last updated 2023.
+- [observe-ts/observe-ts](https://github.com/observe-ts/observe-ts) - Structural observability for Effect programs. Last updated 2025.
+- [jrkienle/posthog-effect](https://www.npmjs.com/package/@jrkienle/posthog-effect) - PostHog bindings. Effect v3.
+- [Effect-Deprecated/otel](https://github.com/Effect-Deprecated/otel) - OpenTelemetry from Effect 2, replaced by `@effect/opentelemetry`. Archived.
+
+#### CLI and terminal
+
+- [PaulJPhilp/effect-cli-tui](https://github.com/PaulJPhilp/effect-cli-tui) - Interactive prompts and display utilities on top of `@effect/cli`. Last updated 2025.
+- [Effect-TS/figlet](https://github.com/Effect-TS/figlet) - FIGlet font parser and renderer. Last updated 2024.
+
+#### Service SDKs and API clients
+
+- [rubywwwilde/Teleffect](https://github.com/rubywwwilde/Teleffect) - Telegram Bot API client. Last updated 2025.
+- [blissito/whatsapp-sdk](https://github.com/blissito/whatsapp-sdk) - WhatsApp Business API SDK. Last updated 2025.
+- [PaulJPhilp/effect-notion](https://github.com/PaulJPhilp/effect-notion) - Proxy server for the Notion API. Last updated 2025.
+- [effect-stripe](https://www.npmjs.com/package/effect-stripe) - Stripe wrapper. Effect v3.
+- [Malvolio/printify-effect](https://github.com/Malvolio/printify-effect) - Printify print-on-demand API. Last updated 2025.
+- [betalyra/wordpress-effect](https://github.com/betalyra/wordpress-effect) - WordPress client. Effect v3.
+- [kevinmichaelchen/book-effect](https://github.com/kevinmichaelchen/book-effect) - Book metadata from Hardcover, Open Library, and Google Books. Last updated 2025.
+- [tvsudhir2/edlink-effect-sdk](https://github.com/tvsudhir2/edlink-effect-sdk) - Edlink SDK. Effect v3.
+
+#### Authentication and authorization
+
+- [betalyra/sorry-dave](https://github.com/betalyra/sorry-dave) - Authorization library. Last updated 2025.
+
+#### Blockchain
+
+- [evmts/voltaire](https://github.com/evmts/voltaire) - Ethereum primitives with a `voltaire-effect` package for typed contract calls. Effect v3.
 - [HeliosLang/effect](https://github.com/HeliosLang/effect) - Effect version of the Helios off-chain library for Cardano. Effect v3.
 
 ## Development tools

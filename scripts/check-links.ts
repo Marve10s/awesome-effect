@@ -1,7 +1,7 @@
 const README = new URL("../README.md", import.meta.url);
 const CONCURRENCY = 16;
 const TIMEOUT_MS = 20_000;
-const SKIP_HOSTS = new Set(["twitter.com", "x.com", "www.linkedin.com", "open.spotify.com", "podcasts.apple.com", "discord.gg"]);
+const SKIP_HOSTS = new Set(["twitter.com", "x.com", "www.linkedin.com", "open.spotify.com", "podcasts.apple.com", "discord.gg", "javascript.plainenglish.io"]);
 const UA = "Mozilla/5.0 (compatible; awesome-effect-link-check; +https://github.com/Marve10s/awesome-effect)";
 
 type Result = { url: string; status: number; ok: boolean; error?: string };

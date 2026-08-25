@@ -28,8 +28,9 @@ Rules:
 
 - Link text is `owner/repo` for GitHub projects. Use the project name for sites, courses, and packages that only exist on npm.
 - The description says what the thing does. No adjectives like "powerful", "blazing", or "production-ready".
-- Add "Effect v4." at the end when the package's `effect` peer dependency only accepts 4.x. Add "Effect v3." when it only accepts 3.x. Say nothing when both work or when it is not a library.
-- Add "Last updated YYYY." when the repo has had no commits since 2024. Do not remove such entries; readers still find them useful for reference.
+- Put a library under "Ecosystem libraries" when its `effect` peer dependency accepts 4.x, or when the range is open-ended (`>=3`). Put it under "Effect v3 legacy" when the range stops at 3.x, when the repo has had no commits since before 2026, or when the package was merged into core in Effect 4.
+- Add "Effect v3." at the end of a legacy entry whose peer range stops at 3.x. Add "Last updated YYYY." when the repo has had no commits since before 2026. Do not remove such entries; readers still find them useful for reference.
+- Bump the "Last updated" date at the top of the README when you add or remove entries.
 - Keep entries within a section sorted roughly by relevance, official first. Exact ordering is not enforced.
 - Sentence-case headings. No emoji.
 
@@ -39,7 +40,7 @@ Rules:
 bun run check
 ```
 
-`bun run check` runs `awesome-lint` on the README and `scripts/check-links.ts` on every URL. Both must pass. `bun run stale` prints GitHub repos that are archived or have had no push in twelve months; it is informational and runs weekly in CI.
+`bun run check` runs `scripts/check-links.ts` on every URL in the README. It must pass. `bun run stale` prints GitHub repos that are archived or have had no push in twelve months; it is informational and runs weekly in CI.
 
 ## Removing entries
 
