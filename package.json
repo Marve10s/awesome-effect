@@ -1,0 +1,16 @@
+{
+  "name": "awesome-effect",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Libraries, tools, apps, and learning material for Effect",
+  "type": "module",
+  "scripts": {
+    "lint": "bunx awesome-lint",
+    "links": "bun run scripts/check-links.ts",
+    "stale": "bun run scripts/check-stale.ts",
+    "check": "bun run lint && bun run links"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0"
+  }
+}
