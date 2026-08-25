@@ -31,14 +31,14 @@ One line per entry, following [awesome-rust](https://github.com/rust-unofficial/
 - <img src="assets/icons/github.svg" alt="GitHub"> [owner/repo](https://github.com/owner/repo) - What it does, in one sentence ending with a period.
 ```
 
-Icons live in `assets/icons/`: `github`, `npm`, `web`, `video`, `article`, `podcast`. Pick the one that matches where the link goes. Section headings carry a pill from `assets/pills/`; do not add new pills without opening an issue first.
+Icons live in `assets/icons/`: `github`, `npm`, `web`, `video`, `article`, `podcast`. Pick the one that matches where the link goes. Section headings carry an icon mark from `assets/pills/`, the "More" links use a gray tile from `assets/icons/`, and the inline v4 tag lives in `assets/tags/`; do not add new ones without opening an issue first.
 
 Rules:
 
 - Link text is `owner/repo` for GitHub projects. Use the project name for sites, courses, and packages that only exist on npm.
 - The description says what the thing does. No adjectives like "powerful", "blazing", or "production-ready".
 - Put a library under "Ecosystem libraries" when its `effect` peer dependency accepts 4.x, or when the range is open-ended (`>=3`). Put it under "Effect v3 legacy" when the range stops at 3.x, when the repo has had no commits since before 2026, or when the package was merged into core in Effect 4.
-- End an entry with `<img src="assets/pills/v4.svg" alt="Effect v4">` when its peer range only accepts 4.x, and with `<img src="assets/pills/legacy.svg" alt="Effect v3 legacy">` when it stops at 3.x. Add "Last updated YYYY." when the repo has had no commits since before 2026. Do not remove such entries; readers still find them useful for reference.
+- End an ecosystem entry with `<img src="assets/tags/v4.svg" alt="Effect v4">` when the package publishes an `effect` peer range that accepts 4.x. Leave it off when the range is open-ended or absent. Legacy entries carry no tag; the section says it. Add "Last updated YYYY." when the repo has had no commits since before 2026. Do not remove such entries; readers still find them useful for reference.
 - Run `bun run updated` when you add or remove entries; it regenerates the "Last updated" badge at the top of the README with today's date.
 - Keep entries within a section sorted roughly by relevance, official first. Exact ordering is not enforced.
 - Sentence-case headings. No emoji.

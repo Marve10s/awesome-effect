@@ -58,7 +58,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [nmnmcc/Veya](https://github.com/nmnmcc/Veya) - Programmable video creation library.
 - <img src="assets/icons/github.svg" alt="GitHub"> [andrueandersoncs/lion](https://github.com/andrueandersoncs/lion) - JSON-based Lisp written entirely in Effect.
 - <img src="assets/icons/web.svg" alt="Website"> [Typing Terminal](https://typingterminal.com) - Multiplayer typing game built with Effect and Foldkit.
-- <img src="assets/icons/web.svg" alt="Website"> [tokenmaxxing](https://tokenmaxxing.sh) - Leaderboard for LLM coding agent usage and cost, built with <img src="assets/pills/v4.svg" alt="Effect v4">
+- <img src="assets/icons/web.svg" alt="Website"> [tokenmaxxing](https://tokenmaxxing.sh) - Leaderboard for LLM coding agent usage and cost, built with <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/web.svg" alt="Website"> [Pivit](https://pivit.app) - Windows command hub with AI chat and window management.
 - <img src="assets/icons/web.svg" alt="Website"> [citymcp](https://citymcp.com) - Live city data for agents, built at a hackathon.
 - <img src="assets/icons/web.svg" alt="Website"> [Dtapline](https://dtapline.com) - Deployment tracking and visualization.
@@ -83,7 +83,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [backpine/effect-worker-mono](https://github.com/backpine/effect-worker-mono) - Cloudflare Workers monorepo with shared domain models and API contracts.
 - <img src="assets/icons/github.svg" alt="GitHub"> [sanurb/effect-worker-mono](https://github.com/sanurb/effect-worker-mono) - Another Cloudflare Workers monorepo template.
 - <img src="assets/icons/github.svg" alt="GitHub"> [ksamirdev/effect-rpc-workers](https://github.com/ksamirdev/effect-rpc-workers) - `@effect/rpc` on Cloudflare Workers.
-- <img src="assets/icons/github.svg" alt="GitHub"> [mw10013/tanstack-cloudflare-effect-shopify-app](https://github.com/mw10013/tanstack-cloudflare-effect-shopify-app) - Shopify app template on TanStack Start, Cloudflare Workers, and <img src="assets/pills/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [mw10013/tanstack-cloudflare-effect-shopify-app](https://github.com/mw10013/tanstack-cloudflare-effect-shopify-app) - Shopify app template on TanStack Start, Cloudflare Workers, and <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [brandhaug/b2b-saas-starter](https://github.com/brandhaug/b2b-saas-starter) - Cloudflare-first SaaS monorepo: TanStack Start, Effect v4, Drizzle on D1, Better Auth, Alchemy.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kevin-courbet/effect-nextjs-architecture](https://github.com/kevin-courbet/effect-nextjs-architecture) - Next.js 15 full-stack architecture with page and action builders.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kevin-courbet/tanstack-effect-example](https://github.com/kevin-courbet/tanstack-effect-example) - TanStack Start with Effect RPC, one query and one mutation.
@@ -112,14 +112,14 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [f15u/effect-app](https://github.com/f15u/effect-app) - One developer's opinionated full-stack setup.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Matechs-Digital/effect-ts-lambda](https://github.com/Matechs-Digital/effect-ts-lambda) - AWS Lambda setup from the Effect 2 era. Last updated 2022.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jkonowitch/hex-effect](https://github.com/jkonowitch/hex-effect) - Hexagonal architecture for DDD. Last updated 2024.
-- <img src="assets/icons/github.svg" alt="GitHub"> [dataquail/functional-domain-driven-hexagon](https://github.com/dataquail/functional-domain-driven-hexagon) - Hexagonal DDD on <img src="assets/pills/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [dataquail/functional-domain-driven-hexagon](https://github.com/dataquail/functional-domain-driven-hexagon) - Hexagonal DDD on <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [tuanpt-repo/effect-ddd](https://github.com/tuanpt-repo/effect-ddd) - DDD exploration with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [guillempuche/effect_server_react](https://github.com/guillempuche/effect_server_react) - Clean architecture: domain, use cases, repositories, SQL, and a Node server. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [guillempuche/demo_supertokens_effect](https://github.com/guillempuche/demo_supertokens_effect) - Passwordless auth with SuperTokens. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [heritageholdings/passkey-example](https://github.com/heritageholdings/passkey-example) - Passkey registration and login on Node and React Native. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [leofmarciano/encore-effect](https://github.com/leofmarciano/encore-effect) - Seven-service microservice system on Encore.ts and Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Felipeness/holonomic-architecture](https://github.com/Felipeness/holonomic-architecture) - Fastify, Effect, and Temporal boilerplate.
-- <img src="assets/icons/github.svg" alt="GitHub"> [Chahine-tech/flux](https://github.com/Chahine-tech/flux) - Canary deployments on a Temporal workflow in <img src="assets/pills/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [Chahine-tech/flux](https://github.com/Chahine-tech/flux) - Canary deployments on a Temporal workflow in <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [stevebluck/chuz](https://github.com/stevebluck/chuz) - Remix and Effect with domain-driven design. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [nickytonline/stream-for-effect](https://github.com/nickytonline/stream-for-effect) - Code from Michael Arnaldi's live-coding intro on nickyt.live. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [bishalr0y/effect-url-shortener](https://github.com/bishalr0y/effect-url-shortener) - URL shortener with Effect and Drizzle.
