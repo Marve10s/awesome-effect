@@ -16,6 +16,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [anomalyco/opencode](https://github.com/anomalyco/opencode) - The open source coding agent. Depends on `effect`, `@effect/platform-node`, and `@effect/opentelemetry`.
 - <img src="assets/icons/github.svg" alt="GitHub"> [pingdotgg/t3code](https://github.com/pingdotgg/t3code) - Coding agent client from the t3 team, built with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [pingdotgg/uploadthing](https://github.com/pingdotgg/uploadthing) - File uploads for web apps. Adopted Effect in 2024.
+- <img src="assets/icons/github.svg" alt="GitHub"> [MapleTechLabs/maple](https://github.com/MapleTechLabs/maple) - OpenTelemetry observability platform for traces, logs, and metrics, built on <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [marimo-team/marimo](https://github.com/marimo-team/marimo) - Reactive Python notebook. Its VS Code extension is written with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [AnswerOverflow/AnswerOverflow](https://github.com/AnswerOverflow/AnswerOverflow) - Indexes Discord threads as web pages. Large Effect v3 codebase.
 - <img src="assets/icons/github.svg" alt="GitHub"> [RhysSullivan/create-epoch-app](https://github.com/RhysSullivan/create-epoch-app) - Full-stack starter with Effect, Convex, and Next.js. The same author's Effect v4 reference codebase.

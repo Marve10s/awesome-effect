@@ -4,7 +4,7 @@ Libraries, tools, apps, and learning material for [Effect](https://effect.websit
 
 Effect 4 is the current major. The list is split by it: Effect v4 core is what ships with Effect 4, Ecosystem libraries are third-party packages that work next to it, and Effect v3 legacy holds the packages that were merged into core plus libraries still pinned to `effect@3`. Tools, apps, examples, and learning resources follow.
 
-<img src="assets/pills/updated.svg" alt="Last updated 2026-08-25">
+<img src="assets/pills/updated.svg" alt="Last updated 2026-08-27">
 
 ## More
 
