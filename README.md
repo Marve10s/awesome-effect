@@ -255,6 +255,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 ### Messaging, jobs, workflows, and actors
 
 - <img src="assets/icons/github.svg" alt="GitHub"> [TeamWarp/effect-mq](https://github.com/TeamWarp/effect-mq) - Background jobs with schema-first definitions, a worker runtime, and a PostgreSQL store inside your Drizzle schema. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [TeamSpringbird/effect-temporal](https://github.com/TeamSpringbird/effect-temporal) - Runs `effect/unstable/workflow` programs on Temporal: activities, durable timers, signals, updates, queryable state, schedules, and Nexus operations, with one `workflowBundle` shared by the worker and every client. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [erikshestopal/effect-inngest](https://github.com/erikshestopal/effect-inngest) - Durable workflows with Inngest, Effect-native steps, and Layer injection.
 - <img src="assets/icons/github.svg" alt="GitHub"> [fdarian/effect-hatchet](https://github.com/fdarian/effect-hatchet) - Hatchet bindings with an in-memory implementation for tests.
 - <img src="assets/icons/github.svg" alt="GitHub"> [tim-smart/effect-genserver](https://github.com/tim-smart/effect-genserver) - GenServer-style actors that work with cluster, RPC, or Atom.
