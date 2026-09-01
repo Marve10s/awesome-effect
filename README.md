@@ -1,10 +1,12 @@
+<a href="https://effect.website/blog/this-week-in-effect/133"><img src="assets/featured.svg" alt="Featured in This Week in Effect #133" width="100%"></a>
+
 # Awesome Effect
 
 Libraries, tools, apps, and learning material for [Effect](https://effect.website), the TypeScript library for typed errors, dependency injection, concurrency, and streams.
 
 Effect 4 is the current major. The list is split by it: Effect v4 core is what ships with Effect 4, Ecosystem libraries are third-party packages that work next to it, and Effect v3 legacy holds the packages that were merged into core plus libraries still pinned to `effect@3`. Tools, apps, examples, and learning resources follow.
 
-<img src="assets/pills/updated.svg" alt="Last updated 2026-08-27">
+<img src="assets/pills/updated.svg" alt="Last updated 2026-09-01">
 
 ## More
 
