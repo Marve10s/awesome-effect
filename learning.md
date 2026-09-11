@@ -25,10 +25,10 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/web.svg" alt="Website"> [effect.ninja](https://effect-way-course--jonas127.replit.app) - Interactive course by Jonas Templestein.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect Commander](https://github.com/jjhiggz/learn-effect-stuff) - Game that teaches fibers, scheduling, and retries by making you use them.
 - <img src="assets/icons/github.svg" alt="GitHub"> [pigoz/effect-crashcourse](https://github.com/pigoz/effect-crashcourse) - The practical guide the author wished existed when learning. Last updated 2024.
-- <img src="assets/icons/github.svg" alt="GitHub"> [antoine-coulon/effect-introduction](https://github.com/antoine-coulon/effect-introduction) - Why Effect, for developers moving from plain TypeScript.
-- <img src="assets/icons/github.svg" alt="GitHub"> [kiliancs/effect-workshop](https://github.com/kiliancs/effect-workshop) - Explanations and exercises for beginners.
+- <img src="assets/icons/github.svg" alt="GitHub"> [antoine-coulon/effect-introduction](https://github.com/antoine-coulon/effect-introduction) - Why Effect, for developers moving from plain TypeScript. Last updated 2025.
+- <img src="assets/icons/github.svg" alt="GitHub"> [kiliancs/effect-workshop](https://github.com/kiliancs/effect-workshop) - Explanations and exercises for beginners. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [cardotrejos/effect-interactive-lab](https://github.com/cardotrejos/effect-interactive-lab) - Interactive React examples contrasting Effect with async/await.
-- <img src="assets/icons/github.svg" alt="GitHub"> [Effect Days 2025 workshop](https://github.com/Effect-TS/effect-days-2025-workshop) - Official workshop exercises.
+- <img src="assets/icons/github.svg" alt="GitHub"> [Effect Days 2025 workshop](https://github.com/Effect-TS/effect-days-2025-workshop) - Official workshop exercises. Last updated 2025.
 - <img src="assets/icons/web.svg" alt="Website"> [Advent of Effect](https://adventofeffect.com) - Solve Advent of Code with Effect alongside the Discord.
 - <img src="assets/icons/web.svg" alt="Website"> [justfuckinguseeffect.dev](https://justfuckinguseeffect.dev) - Single-page argument for using Effect.
 - <img src="assets/icons/web.svg" alt="Website"> [Effect vs fp-ts](https://effect.website/docs/additional-resources/effect-vs-fp-ts/) - Official comparison for fp-ts users.
@@ -69,12 +69,14 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/article.svg" alt="Article"> [Building inkpipe](https://www.thomasdeconinck.fr/blog/2026-06-25-effect-ts-inkpipe) - Thomas Deconinck.
 - <img src="assets/icons/article.svg" alt="Article"> [Schema is all you need](https://mattiamanzati.github.io/schema-is-all-you-need) - Mattia Manzati's React Alicante slides with live-coding transcript.
 - <img src="assets/icons/article.svg" alt="Article"> [TypeScript validators jamboree](https://monadical.com/posts/typescript-validators-jamboree.html) - Igor Loskutov compares validation libraries, Effect Schema included.
+- <img src="assets/icons/article.svg" alt="Article"> [Branded types and connascence of execution](https://www.dearlordylord.com/blog/branded-types-connascence-of-execution/) - Igor Loskutov.
 - <img src="assets/icons/article.svg" alt="Article"> [StudioCMS Beta 19: an Effectful update](https://studiocms.dev/blog/beta-19-release) - Migration write-up. Also [Beta 31: from Drizzle to Kysely](https://studiocms.dev/blog/beta-31-release) and [v0.1.0](https://studiocms.dev/blog/v0-1-release).
 - <img src="assets/icons/article.svg" alt="Article"> [Foldkit has server rendering](https://foldkit.dev/blog/foldkit-has-server-rendering) - Devin Jameson. Also [Foldkit vs React side by side](https://foldkit.dev/foldkit-vs-react-side-by-side).
 - <img src="assets/icons/article.svg" alt="Article"> [Alessandro Maclaine's Option series on dev.to](https://dev.to/almaclaine) - Matching, sequencing, zipping, combining, folding, filtering, and lifting with Option.
 - <img src="assets/icons/article.svg" alt="Article"> [Building robust TypeScript APIs with the Effect ecosystem](https://dev.to/martinpersson/building-robust-typescript-apis-with-the-effect-ecosystem-1m7c) - Martin Persson. Also [a type-safe GraphQL backend with Effect and Drizzle](https://dev.to/martinpersson/building-a-robust-backend-with-effect-graphql-and-drizzle-k4j).
 - <img src="assets/icons/article.svg" alt="Article"> [Breaking down Effect TS](https://dev.to/modgil_23/breaking-down-effect-ts-part-1-2e0i) - Two-part FP foundations series.
 - <img src="assets/icons/article.svg" alt="Article"> [Effects in TypeScript: a new way to build robust backends](https://merginit.com/blog/27062025-effects-in-typescript) - Merginit.
+- <img src="assets/icons/article.svg" alt="Article"> [Astra vs. The Boys: a tale of 200 PRs](https://effect.website/blog/astra-vs-the-boys) - Michael Arnaldi on 207 agent-written pull requests against the Effect codebase in three days, and the review agents built to handle them.
 
 ## <img src="assets/pills/learning.svg" alt="Learning"> Videos and talks
 
@@ -99,6 +101,9 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/video.svg" alt="Video"> [Effect: the unreadable library that captured my heart](https://www.youtube.com/watch?v=S2GChOwivwQ) - Matt Pocock, 2025.
 - <img src="assets/icons/video.svg" alt="Video"> [Building reliable support agents using the Effect TypeScript library](https://www.youtube.com/@aiDotEngineer) - Michael Fester at AI Engineer.
 - <img src="assets/icons/video.svg" alt="Video"> [Why my coding agents use Effect](https://youtu.be/s6uAUvAaRN0) - Parker Landon.
+- <img src="assets/icons/video.svg" alt="Video"> [Stop the agent slop with Effect](https://www.youtube.com/watch?v=b8ULm238DHg) - Maxwell Brown, 2026.
+- <img src="assets/icons/video.svg" alt="Video"> [Testing LLM workflows with Effect at OpenCode](https://www.youtube.com/watch?v=EBSOGU-65c4) - Kit Langton, 2026.
+- <img src="assets/icons/video.svg" alt="Video"> [Effective state machines with XState](https://www.youtube.com/watch?v=m-dSS55VO3Y) - David Khourshid, Effect Miami 2. Also from the same meetup: [How to switch to Effect for NestJS devs](https://www.youtube.com/watch?v=MlKoIo0oQwk) by Serge Leon and [Typed agentic runtimes and workflows](https://www.youtube.com/watch?v=07edR9TwrJA) by Ariel Azoulay.
 - <img src="assets/icons/video.svg" alt="Video"> [Theo on Effect in his stack](https://youtu.be/3c4UyGRBnmM) - Around 43:55.
 - <img src="assets/icons/video.svg" alt="Video"> [Lucas Barake's channel](https://www.youtube.com/@lucas-barake) - Long-form videos on RPC, workers, permissions, and more.
 - <img src="assets/icons/video.svg" alt="Video"> [Ben Davis's channel](https://www.youtube.com/@bmdavis419) - Includes "My favorite TypeScript library just got so much better".

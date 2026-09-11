@@ -35,7 +35,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [mrtdurdenthe2/muster](https://github.com/mrtdurdenthe2/muster) - Keyboard-driven TUI for GitHub issues across repos.
 - <img src="assets/icons/github.svg" alt="GitHub"> [timhanlon/arcwork](https://github.com/timhanlon/arcwork) - Unified development environment for conversations, tasks, and diffs across agent harnesses.
 - <img src="assets/icons/github.svg" alt="GitHub"> [bgub/agentpane](https://github.com/bgub/agentpane) - Web interface for AI coding agents.
-- <img src="assets/icons/github.svg" alt="GitHub"> [longtail-labs/slide.code](https://github.com/longtail-labs/slide.code) - Graphical environment for Claude Code.
+- <img src="assets/icons/github.svg" alt="GitHub"> [longtail-labs/slide.code](https://github.com/longtail-labs/slide.code) - Graphical environment for Claude Code. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [andresmarpz/sandcastle](https://github.com/andresmarpz/sandcastle) - Agent orchestrator for managing loops.
 - <img src="assets/icons/github.svg" alt="GitHub"> [t0dorakis/murmur](https://github.com/t0dorakis/murmur) - Cron daemon for recurring agent sessions from `HEARTBEAT.md` files.
 - <img src="assets/icons/github.svg" alt="GitHub"> [guillempuche/batuda](https://github.com/guillempuche/batuda) - CRM with a built-in research agent.
@@ -45,14 +45,19 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [tim-smart/actualbudget-sync](https://github.com/tim-smart/actualbudget-sync) - Sync bank transactions into Actual Budget.
 - <img src="assets/icons/github.svg" alt="GitHub"> [tim-smart/stremio-effect](https://github.com/tim-smart/stremio-effect) - Stremio add-on written as a learning project.
 - <img src="assets/icons/github.svg" alt="GitHub"> [tim-smart/lalph](https://github.com/tim-smart/lalph) - Agent loop runner by Tim Smart.
+- <img src="assets/icons/github.svg" alt="GitHub"> [piotr-m-jurek/shipwright](https://github.com/piotr-m-jurek/shipwright) - Agent on Effect HttpApi that turns project inputs into a project brief and an implementation PRD, on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [B4rz99/fidy-ai](https://github.com/B4rz99/fidy-ai) - Agent-first personal finance for Colombia, used through WhatsApp, on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [kondaurovDev/procdeck](https://github.com/kondaurovDev/procdeck) - Runs a whole dev stack with one command, each process in a browser terminal pane with a live view of traffic between services, on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [jackbisceglia/dotheyplaytoday](https://github.com/jackbisceglia/dotheyplaytoday) - Emails you when your sports team plays today, on Effect and Solid.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jcfischer/supertag-cli](https://github.com/jcfischer/supertag-cli) - Tana CLI with semantic search and an MCP server.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kevinmichaelchen/effect-coffee-shop](https://github.com/kevinmichaelchen/effect-coffee-shop) - Coffee ordering app showing onion architecture on Bun and Cloudflare with MCP.
-- <img src="assets/icons/github.svg" alt="GitHub"> [OperationalFallacy/Unleaded](https://github.com/OperationalFallacy/Unleaded) - Car listing search CLI on Ink and Effect Atom.
+- <img src="assets/icons/github.svg" alt="GitHub"> [OperationalFallacy/Unleaded](https://github.com/OperationalFallacy/Unleaded) - Car listing search CLI on Ink and Effect Atom. Archived in 2026.
 - <img src="assets/icons/github.svg" alt="GitHub"> [mepuka/bsky-cli](https://github.com/mepuka/bsky-cli) - Bluesky data filtering and monitoring CLI.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Inalegwu/Comic-Pulse](https://github.com/Inalegwu/Comic-Pulse) - Discord bot that announces comic releases.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kachkaev/s20-wifi-setup](https://github.com/kachkaev/s20-wifi-setup) - Connect legacy Orvibo smart sockets to Wi-Fi from the terminal.
 - <img src="assets/icons/github.svg" alt="GitHub"> [davidnussio/github-stars-organizer](https://github.com/davidnussio/github-stars-organizer) - Semantic search over GitHub stars with SQLite and embeddings.
 - <img src="assets/icons/github.svg" alt="GitHub"> [takeokunn/ts-minecraft](https://github.com/takeokunn/ts-minecraft) - Browser voxel game on Three.js and Effect.
+- <img src="assets/icons/github.svg" alt="GitHub"> [xesrevinu/effect-event-log-isles](https://github.com/xesrevinu/effect-event-log-isles) - EventLog Isles, a creature-raising game that demonstrates Effect EventLog and Atom. [Play it](https://effect-isles.grok.me).
 - <img src="assets/icons/github.svg" alt="GitHub"> [hideyuki-hori/lab-webgpu-editor](https://github.com/hideyuki-hori/lab-webgpu-editor) - Shadertoy-style WGSL editor with WebGPU.
 - <img src="assets/icons/github.svg" alt="GitHub"> [DwieDave/imageresizer](https://github.com/DwieDave/imageresizer) - Browser image resizer on WebAssembly and Web Workers.
 - <img src="assets/icons/github.svg" alt="GitHub"> [bettercallmanav/repaste](https://github.com/bettercallmanav/repaste) - macOS clipboard manager on Electron with event sourcing.
@@ -69,11 +74,11 @@ Open source apps and services with Effect in their stack.
 
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect-TS/examples](https://github.com/Effect-TS/examples) - Official examples.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jeremyosih/real-world-effect](https://github.com/jeremyosih/real-world-effect) - Open source Effect apps and templates collected in one repo for searching with agents.
-- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-getting-started-course](https://github.com/typeonce-dev/effect-getting-started-course) - Code for the Typeonce getting started course.
-- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-backend-example](https://github.com/typeonce-dev/effect-backend-example) - Backend API with SQL and Docker setup.
+- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-getting-started-course](https://github.com/typeonce-dev/effect-getting-started-course) - Code for the Typeonce getting started course. Last updated 2025.
+- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-backend-example](https://github.com/typeonce-dev/effect-backend-example) - Backend API with SQL and Docker setup. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-react-19-project-template](https://github.com/typeonce-dev/effect-react-19-project-template) - Services, layers, and runtime for client and server code in React 19.
-- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/paddle-payments-full-stack-typescript-app](https://github.com/typeonce-dev/paddle-payments-full-stack-typescript-app) - Paddle Billing checkout and webhooks.
-- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/calories-tracker-local-only-app](https://github.com/typeonce-dev/calories-tracker-local-only-app) - Local-only app on TanStack Router, PGlite, XState, and Drizzle.
+- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/paddle-payments-full-stack-typescript-app](https://github.com/typeonce-dev/paddle-payments-full-stack-typescript-app) - Paddle Billing checkout and webhooks. Last updated 2025.
+- <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/calories-tracker-local-only-app](https://github.com/typeonce-dev/calories-tracker-local-only-app) - Local-only app on TanStack Router, PGlite, XState, and Drizzle. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [SandroMaglione/effect-getting-started](https://github.com/SandroMaglione/effect-getting-started) - Context, Layer, Runtime, and Scope examples. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [SandroMaglione/getting-started-xstate-and-effect](https://github.com/SandroMaglione/getting-started-xstate-and-effect) - XState with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [SandroMaglione/pglite-client-server](https://github.com/SandroMaglione/pglite-client-server) - Local-first Remix app on PGlite and Drizzle. Last updated 2024.
@@ -91,17 +96,17 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [effect-app/boilerplate](https://github.com/effect-app/boilerplate) - Boilerplate for effect-app libs.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jackblatch/hono-effect-starter](https://github.com/jackblatch/hono-effect-starter) - API starter on Hono, Effect, Temporal, Drizzle, and PlanetScale.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jimmy-guzman/hono-starter](https://github.com/jimmy-guzman/hono-starter) - REST API starter on Hono, Effect, Drizzle, and Bun.
-- <img src="assets/icons/github.svg" alt="GitHub"> [Muhamed-Ragab/hono-with-effect.ts](https://github.com/Muhamed-Ragab/hono-with-effect.ts) - Hono with Effect.
+- <img src="assets/icons/github.svg" alt="GitHub"> [Muhamed-Ragab/hono-with-effect.ts](https://github.com/Muhamed-Ragab/hono-with-effect.ts) - Hono with Effect. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [mateoroldos/sveltekit-effect-template](https://github.com/mateoroldos/sveltekit-effect-template) - SvelteKit with Effect. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [bmdavis419/effect-to-js-ex](https://github.com/bmdavis419/effect-to-js-ex) - Effect backend in a SvelteKit app crossing the boundary with typed errors.
-- <img src="assets/icons/github.svg" alt="GitHub"> [denishsharma/kickr-react-effect-starter-template](https://github.com/denishsharma/kickr-react-effect-starter-template) - React, Tailwind, TanStack Router, and Vite starter.
+- <img src="assets/icons/github.svg" alt="GitHub"> [denishsharma/kickr-react-effect-starter-template](https://github.com/denishsharma/kickr-react-effect-starter-template) - React, Tailwind, TanStack Router, and Vite starter. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Guiguerreiro39/effect-monorepo](https://github.com/Guiguerreiro39/effect-monorepo) - Full-stack monorepo with Effect.
-- <img src="assets/icons/github.svg" alt="GitHub"> [Guiguerreiro39/trpc-effect-prisma](https://github.com/Guiguerreiro39/trpc-effect-prisma) - Next.js with tRPC, Effect, and Prisma.
+- <img src="assets/icons/github.svg" alt="GitHub"> [Guiguerreiro39/trpc-effect-prisma](https://github.com/Guiguerreiro39/trpc-effect-prisma) - Next.js with tRPC, Effect, and Prisma. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [sundaray/next-effect](https://github.com/sundaray/next-effect) - AI app directory on Next.js, Hono, and Effect.
-- <img src="assets/icons/github.svg" alt="GitHub"> [inioluwa-io/EffectJS-NextJS-Next-Auth-Prisma-Starter](https://github.com/inioluwa-io/EffectJS-NextJS-Next-Auth-Prisma-Starter) - Next.js, NextAuth, and Prisma starter.
+- <img src="assets/icons/github.svg" alt="GitHub"> [inioluwa-io/EffectJS-NextJS-Next-Auth-Prisma-Starter](https://github.com/inioluwa-io/EffectJS-NextJS-Next-Auth-Prisma-Starter) - Next.js, NextAuth, and Prisma starter. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [itsyasirkhandev/next_convex_firebase_template](https://github.com/itsyasirkhandev/next_convex_firebase_template) - Next.js, Convex, and Firebase Auth with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [itsyasirkhandev/clerk_convex_template](https://github.com/itsyasirkhandev/clerk_convex_template) - Next.js, Convex, and Clerk with Effect.
-- <img src="assets/icons/github.svg" alt="GitHub"> [dtechvision/app-templates](https://github.com/dtechvision/app-templates) - Web, Farcaster Frames, and mobile templates with Effect backends.
+- <img src="assets/icons/github.svg" alt="GitHub"> [dtechvision/app-templates](https://github.com/dtechvision/app-templates) - Web, Farcaster Frames, and mobile templates with Effect backends. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Inalegwu/Gaze](https://github.com/Inalegwu/Gaze) - Effect starter template. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [juemrami/effect-starter-template](https://github.com/juemrami/effect-starter-template) - Hello world with formatter and LSP set up.
 - <img src="assets/icons/github.svg" alt="GitHub"> [stvncode/effect-vite-starter](https://github.com/stvncode/effect-vite-starter) - Vite starter. Last updated 2023.
@@ -110,7 +115,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [rashedInt32/fullstack-effect-hive](https://github.com/rashedInt32/fullstack-effect-hive) - Real-time chat on Effect, Next.js, and PostgreSQL.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Mumma6/effect-node-server](https://github.com/Mumma6/effect-node-server) - Node server example. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [orlein/backend-server-effect](https://github.com/orlein/backend-server-effect) - Backend built only with Effect for a teacher's frontend students. Last updated 2024.
-- <img src="assets/icons/github.svg" alt="GitHub"> [f15u/effect-app](https://github.com/f15u/effect-app) - One developer's opinionated full-stack setup.
+- <img src="assets/icons/github.svg" alt="GitHub"> [f15u/effect-app](https://github.com/f15u/effect-app) - One developer's opinionated full-stack setup. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Matechs-Digital/effect-ts-lambda](https://github.com/Matechs-Digital/effect-ts-lambda) - AWS Lambda setup from the Effect 2 era. Last updated 2022.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jkonowitch/hex-effect](https://github.com/jkonowitch/hex-effect) - Hexagonal architecture for DDD. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [dataquail/functional-domain-driven-hexagon](https://github.com/dataquail/functional-domain-driven-hexagon) - Hexagonal DDD on <img src="assets/tags/v4.svg" alt="Effect v4">
@@ -129,6 +134,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [sixthextinction/effect-ts-scraping](https://github.com/sixthextinction/effect-ts-scraping) - Fault-tolerant web data pipeline with proxies.
 - <img src="assets/icons/github.svg" alt="GitHub"> [surya-git-kgp/effective-etl](https://github.com/surya-git-kgp/effective-etl) - ETL framework on Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [lloydrichards/edu_effect-okf](https://github.com/lloydrichards/edu_effect-okf) - CLI tools on Effect v4 that parse and query OKF bundles.
+- <img src="assets/icons/github.svg" alt="GitHub"> [lloydrichards/proj_okf-graph](https://github.com/lloydrichards/proj_okf-graph) - CLI that turns the Markdown links between OKF concept files into a directed graph to query and validate.
 - <img src="assets/icons/github.svg" alt="GitHub"> [lloydrichards/base_bevr-stack](https://github.com/lloydrichards/base_bevr-stack) - Bun, Elysia, Vite, React, and Effect stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [lambda-mike/mars-rover-kata](https://github.com/lambda-mike/mars-rover-kata) - Mars rover kata. Last updated 2022.
 - <img src="assets/icons/github.svg" alt="GitHub"> [devmatteini/imperative-to-effect-kata](https://github.com/devmatteini/imperative-to-effect-kata) - Refactoring kata from imperative code to Effect.
