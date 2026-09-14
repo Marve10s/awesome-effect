@@ -6,7 +6,7 @@ Libraries, tools, apps, and learning material for [Effect](https://effect.websit
 
 Effect 4 is the current major. The list is split by it: Effect v4 core is what ships with Effect 4, Ecosystem libraries are third-party packages that work next to it, and Effect v3 legacy holds the packages that were merged into core plus libraries still pinned to `effect@3`. Tools, apps, examples, and learning resources follow.
 
-<img src="assets/pills/updated.svg" alt="Last updated 2026-09-01">
+<img src="assets/pills/updated.svg" alt="Last updated 2026-09-14">
 
 ## More
 
@@ -126,6 +126,9 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [foldkit/foldkit](https://github.com/foldkit/foldkit) - Frontend framework built on Effect, with Elm-style update loops, a UI component set, DevTools MCP, and server rendering. [Site](https://foldkit.dev).
 - <img src="assets/icons/github.svg" alt="GitHub"> [Aniket-508/foldocs](https://github.com/Aniket-508/foldocs) - Documentation site framework built on Foldkit. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [stefvw93/weft](https://github.com/stefvw93/weft) - Reactive DOM library where every node is an Effect.
+- <img src="assets/icons/github.svg" alt="GitHub"> [pigoz/effect-lsc](https://github.com/pigoz/effect-lsc) - Server-owned UI in the style of Phoenix LiveView: components run on the server as Effects, JSX describes the page, and browser events travel over a WebSocket and come back as DOM updates. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [ilhajs/ilha](https://github.com/ilhajs/ilha) - Isomorphic UI library that renders components on the server and hydrates only the interactive islands in the browser, with atoms for reactivity. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [craft-ts/craft-ts](https://github.com/craft-ts/craft-ts) - Signal-first toolkit for state, async work, services, forms, dependency injection, and routes, with an `@craft-ts/effect` adapter that exposes Effect programs as reactive resources. [Guide for Effect users](https://craft-ts.github.io/craft/learn-effect/00-start-here). <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [m9tdev/verrex](https://github.com/m9tdev/verrex) - UI framework where the A, E, R channels of an Effect survive from every leaf of the view tree to the root. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [doeixd/effect-atom-jsx](https://github.com/doeixd/effect-atom-jsx) - Fine-grained JSX runtime with Layer-provided services, async atoms, and optimistic actions. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [lself1022/effer](https://github.com/lself1022/effer) - UI library built on lit-html with Effect at the core.

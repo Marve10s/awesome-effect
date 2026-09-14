@@ -99,6 +99,7 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/video.svg" alt="Video"> [Effect for beginners](https://www.youtube.com/watch?v=fTN8BX5qj6s) - Ethan Niser, 2023.
 - <img src="assets/icons/video.svg" alt="Video"> [Effect-ful computations with fibers](https://www.youtube.com/watch?v=uwALExyq4NY) - Early talk on the fiber model.
 - <img src="assets/icons/video.svg" alt="Video"> [Effect: the unreadable library that captured my heart](https://www.youtube.com/watch?v=S2GChOwivwQ) - Matt Pocock, 2025.
+- <img src="assets/icons/video.svg" alt="Video"> [Learning EffectJS: learning in the age of AI](https://www.youtube.com/watch?v=O2__t8lceCg) - ThePrimeagen, 2026.
 - <img src="assets/icons/video.svg" alt="Video"> [Building reliable support agents using the Effect TypeScript library](https://www.youtube.com/@aiDotEngineer) - Michael Fester at AI Engineer.
 - <img src="assets/icons/video.svg" alt="Video"> [Why my coding agents use Effect](https://youtu.be/s6uAUvAaRN0) - Parker Landon.
 - <img src="assets/icons/video.svg" alt="Video"> [Stop the agent slop with Effect](https://www.youtube.com/watch?v=b8ULm238DHg) - Maxwell Brown, 2026.
