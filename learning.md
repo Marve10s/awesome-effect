@@ -55,7 +55,7 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/article.svg" alt="Article"> [How I replaced tRPC with Effect RPC in a Next.js App Router application](https://dev.to/titouancreach/how-i-replaced-trpc-with-effect-rpc-in-a-nextjs-app-router-application-4j8p) - Titouan Créac'h. [Part 2 on streaming responses](https://dev.to/titouancreach/part-2-how-i-replaced-trpc-with-effect-rpc-in-a-nextjs-app-router-application-streaming-responses-566c).
 - <img src="assets/icons/article.svg" alt="Article"> [Exploring Effect in TypeScript: simplifying async and error handling](https://www.tweag.io/blog/2024-11-07-typescript-effect/) - Douglas Massolari at Tweag writes the same app twice.
 - <img src="assets/icons/article.svg" alt="Article"> [Why we chose Effect for building Spiko](https://tech.spiko.io/posts/why-we-chose-effect) - Samuel Briole, CTO of Spiko.
-- <img src="assets/icons/article.svg" alt="Article"> [Building with Effect and EdgeDB](https://www.edgedb.com/blog/building-with-effect-and-edgedb-part-1) - Aleksandra Sikora.
+- <img src="assets/icons/article.svg" alt="Article"> [Building with Effect and EdgeDB](https://www.geldata.com/blog/building-with-effect-and-edgedb-part-1) - Aleksandra Sikora.
 - <img src="assets/icons/article.svg" alt="Article"> [One Effect to rule them all](https://blog.mayflower.de/29040-typescript-effect-standard-framework.html) - Maria Haubner on Mayflower's adoption from `@effect/schema` outward.
 - <img src="assets/icons/article.svg" alt="Article"> [Effect TS: the new standard for building production APIs](https://blog.type-driven.com/effect-ts-new-standard) - Type Driven.
 - <img src="assets/icons/article.svg" alt="Article"> [Building a fault-tolerant web data ingestion pipeline with Effect-TS](https://javascript.plainenglish.io/building-a-fault-tolerant-web-data-ingestion-pipeline-with-effect-ts-0bc5494282ba) - Typed errors, resources, and retry policies.
@@ -99,6 +99,7 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/video.svg" alt="Video"> [Effect for beginners](https://www.youtube.com/watch?v=fTN8BX5qj6s) - Ethan Niser, 2023.
 - <img src="assets/icons/video.svg" alt="Video"> [Effect-ful computations with fibers](https://www.youtube.com/watch?v=uwALExyq4NY) - Early talk on the fiber model.
 - <img src="assets/icons/video.svg" alt="Video"> [Effect: the unreadable library that captured my heart](https://www.youtube.com/watch?v=S2GChOwivwQ) - Matt Pocock, 2025.
+- <img src="assets/icons/video.svg" alt="Video"> [Learning EffectJS: learning in the age of AI](https://www.youtube.com/watch?v=O2__t8lceCg) - ThePrimeagen, 2026.
 - <img src="assets/icons/video.svg" alt="Video"> [Building reliable support agents using the Effect TypeScript library](https://www.youtube.com/@aiDotEngineer) - Michael Fester at AI Engineer.
 - <img src="assets/icons/video.svg" alt="Video"> [Why my coding agents use Effect](https://youtu.be/s6uAUvAaRN0) - Parker Landon.
 - <img src="assets/icons/video.svg" alt="Video"> [Stop the agent slop with Effect](https://www.youtube.com/watch?v=b8ULm238DHg) - Maxwell Brown, 2026.

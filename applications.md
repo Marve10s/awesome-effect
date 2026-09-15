@@ -31,6 +31,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [strandhvilliam/blikka](https://github.com/strandhvilliam/blikka) - SaaS for running photo marathons.
 - <img src="assets/icons/github.svg" alt="GitHub"> [robertpitt/cycle](https://github.com/robertpitt/cycle) - Local-first, agent-driven ticket system backed by a Git repo.
 - <img src="assets/icons/github.svg" alt="GitHub"> [cbnsndwch/cbranch](https://github.com/cbnsndwch/cbranch) - Browser-based Git GUI.
+- <img src="assets/icons/github.svg" alt="GitHub"> [chr33s/git](https://github.com/chr33s/git) - Git Smart-HTTP server, browser client, and CLI built from one core, with pull requests and SSH-signed code reviews stored as Git objects, on <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [kachkaev/repo-dive](https://github.com/kachkaev/repo-dive) - Per-commit snapshots and a metrics dashboard for a repo's history, with MCP support.
 - <img src="assets/icons/github.svg" alt="GitHub"> [mrtdurdenthe2/muster](https://github.com/mrtdurdenthe2/muster) - Keyboard-driven TUI for GitHub issues across repos.
 - <img src="assets/icons/github.svg" alt="GitHub"> [timhanlon/arcwork](https://github.com/timhanlon/arcwork) - Unified development environment for conversations, tasks, and diffs across agent harnesses.

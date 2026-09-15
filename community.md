@@ -13,7 +13,7 @@ Part of [Awesome Effect](README.md).
 
 - <img src="assets/icons/web.svg" alt="Website"> [Discord](https://discord.gg/effect-ts) - Main chat. Has `#job-board` and `#advent-of-effect` channels.
 - <img src="assets/icons/web.svg" alt="Website"> [Events calendar](https://luma.com/effect-community) - Meetups in Paris, Berlin, Milan, Miami, Vienna, Utrecht, Warsaw, New York, and San Francisco have run through 2025 and 2026.
-- <img src="assets/icons/web.svg" alt="Website"> [Effect Days](https://effect.website/effect-days) - Yearly conference. Effect Days 2026 is December 9 to 11 in Italy.
+- <img src="assets/icons/web.svg" alt="Website"> [Effect Days](https://effect.website/effect-days) - Yearly conference. Effect Days 2026 is December 9 to 11 in Livorno, Italy.
 - <img src="assets/icons/github.svg" alt="GitHub"> [evryg-org/effect-paris](https://github.com/evryg-org/effect-paris) - Effect Paris meetup, organized by Evryg.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect-TS/meetups](https://github.com/Effect-TS/meetups) - Meetup group repo. Last updated 2024.
 - <img src="assets/icons/web.svg" alt="Website"> [X](https://twitter.com/EffectTS_) - Official account.
