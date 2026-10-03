@@ -65,6 +65,8 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [nmnmcc/Veya](https://github.com/nmnmcc/Veya) - Programmable video creation library.
 - <img src="assets/icons/github.svg" alt="GitHub"> [andrueandersoncs/lion](https://github.com/andrueandersoncs/lion) - JSON-based Lisp written entirely in Effect.
 - <img src="assets/icons/web.svg" alt="Website"> [Typing Terminal](https://typingterminal.com) - Multiplayer typing game built with Effect and Foldkit.
+- <img src="assets/icons/github.svg" alt="GitHub"> [IMax153/twitch-integrations](https://github.com/IMax153/twitch-integrations) - Twitch integrations built with Effect, with a broadcaster page built with Foldkit.
+- <img src="assets/icons/github.svg" alt="GitHub"> [filipfalcon/skoreova](https://github.com/filipfalcon/skoreova) - Site for women's soccer in Czechia with clubs, players, fixtures, and charts, built with Foldkit and deployed with Alchemy.
 - <img src="assets/icons/web.svg" alt="Website"> [tokenmaxxing](https://tokenmaxxing.sh) - Leaderboard for LLM coding agent usage and cost, built with <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/web.svg" alt="Website"> [Pivit](https://pivit.app) - Windows command hub with AI chat and window management.
 - <img src="assets/icons/web.svg" alt="Website"> [citymcp](https://citymcp.com) - Live city data for agents, built at a hackathon.
@@ -74,6 +76,10 @@ Open source apps and services with Effect in their stack.
 ## <img src="assets/pills/apps.svg" alt="Applications"> Examples, templates, and starters
 
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect-TS/examples](https://github.com/Effect-TS/examples) - Official examples.
+- <img src="assets/icons/web.svg" alt="Website"> [Foldkit example apps](https://foldkit.dev/example-apps) - Foldkit examples from a counter to multiplayer games, each with source and a playground.
+- <img src="assets/icons/npm.svg" alt="npm"> [create-foldkit-app](https://www.npmjs.com/package/create-foldkit-app) - Scaffolds a Foldkit app.
+- <img src="assets/icons/github.svg" alt="GitHub"> [NolanGC/foldkit-alchemy-starter](https://github.com/NolanGC/foldkit-alchemy-starter) - Full-stack starter with a Foldkit frontend, deployed with Alchemy.
+- <img src="assets/icons/github.svg" alt="GitHub"> [elianiva/nook](https://github.com/elianiva/nook) - Monorepo template with a Foldkit frontend, an Effect RPC backend, Cloudflare KV state, and Alchemy infrastructure.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jeremyosih/real-world-effect](https://github.com/jeremyosih/real-world-effect) - Open source Effect apps and templates collected in one repo for searching with agents.
 - <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-getting-started-course](https://github.com/typeonce-dev/effect-getting-started-course) - Code for the Typeonce getting started course. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-backend-example](https://github.com/typeonce-dev/effect-backend-example) - Backend API with SQL and Docker setup. Last updated 2025.

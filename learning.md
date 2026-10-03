@@ -39,6 +39,7 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/article.svg" alt="Article"> [ethanniser.dev/blog/effect-best-practices](https://ethanniser.dev/blog/effect-best-practices) - Best practices from an Effect Days workshop instructor.
 - <img src="assets/icons/article.svg" alt="Article"> [Thoughtworks Technology Radar: Effect](https://www.thoughtworks.com/radar/languages-and-frameworks/effect) - Radar entry from Vol. 32.
 - <img src="assets/icons/article.svg" alt="Article"> [Effect on dev.to](https://dev.to/effect-ts) - Official dev.to organization.
+- <img src="assets/icons/article.svg" alt="Article"> [Foldkit vs React + Effect Atom](https://foldkit.dev/react/foldkit-vs-react-effect-atom) - Compares one Model and a Message union with state spread across atoms, for teams that already use Effect.
 
 ## <img src="assets/pills/learning.svg" alt="Learning"> Articles
 

@@ -123,7 +123,10 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [sproott/effect-atom-svelte](https://github.com/sproott/effect-atom-svelte) - Svelte bindings for Effect Atom. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [nhattran998/tanstack-db-atom](https://github.com/nhattran998/tanstack-db-atom) - Atoms that wrap TanStack DB collections and queries.
 - <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-xstate](https://github.com/typeonce-dev/effect-xstate) - XState actor integration for Effect Atom. <img src="assets/tags/v4.svg" alt="Effect v4">
-- <img src="assets/icons/github.svg" alt="GitHub"> [foldkit/foldkit](https://github.com/foldkit/foldkit) - Frontend framework built on Effect, with Elm-style update loops, a UI component set, DevTools MCP, and server rendering. [Site](https://foldkit.dev).
+- <img src="assets/icons/github.svg" alt="GitHub"> [foldkit/foldkit](https://github.com/foldkit/foldkit) - Frontend framework built on Effect with the Elm Architecture: one Model, a Message union, and a pure update, with side effects as Commands that wrap Effects. Ships routing, accessible UI components, server rendering, Story and Scene tests, an oxlint plugin, and a DevTools MCP server that lets coding agents read the Model, dispatch Messages, and time travel. [Site](https://foldkit.dev). <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [elianiva/foldcn](https://github.com/elianiva/foldcn) - shadcn/ui components ported to Foldkit.
+- <img src="assets/icons/github.svg" alt="GitHub"> [bjacobso/foldworks](https://github.com/bjacobso/foldworks) - Themeable components, a data grid, and a form builder for Foldkit, styled with StyleX. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [doeixd/foldkit-plus](https://github.com/doeixd/foldkit-plus) - Exposes a Foldkit app's Model and an allow-list of its Messages to agents through WebMCP, MCP, and A2A, plus forms, CRUD, sync, and server rendering packages. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [Aniket-508/foldocs](https://github.com/Aniket-508/foldocs) - Documentation site framework built on Foldkit. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [stefvw93/weft](https://github.com/stefvw93/weft) - Reactive DOM library where every node is an Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [pigoz/effect-lsc](https://github.com/pigoz/effect-lsc) - Server-owned UI in the style of Phoenix LiveView: components run on the server as Effects, JSX describes the page, and browser events travel over a WebSocket and come back as DOM updates. <img src="assets/tags/v4.svg" alt="Effect v4">
@@ -457,7 +460,7 @@ Peer dependency stops at 3.x, or no commits since before the Effect 4 release ca
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect-Community/react](https://github.com/Effect-Community/react) - React integration with Query and Effect from the Effect 2 era. Last updated 2023.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kuroski/effect-svelte](https://github.com/kuroski/effect-svelte) - Run Effect programs in SvelteKit load and remote functions with error, redirect, and form handling.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kylobyte-dev/keel](https://github.com/kylobyte-dev/keel) - Fastify 5 backend framework with Effect Schema as type provider and controllers as Effect services.
-- <img src="assets/icons/github.svg" alt="GitHub"> [rjdellecese/confect](https://github.com/rjdellecese/confect) - Convex with Effect: define schemas, validators, and functions as Effect services.
+- <img src="assets/icons/github.svg" alt="GitHub"> [rjdellecese/confect](https://github.com/rjdellecese/confect) - Convex with Effect: define schemas, validators, and functions as Effect services. Includes client bindings for Foldkit apps (`@confect/foldkit`).
 
 #### HTTP, RPC, and API
 
@@ -686,6 +689,7 @@ Ports and libraries that borrow Effect's design outside TypeScript.
 
 ## Other lists
 
+- <img src="assets/icons/github.svg" alt="GitHub"> [tao-io/awesome-foldkit](https://github.com/tao-io/awesome-foldkit) - Foldkit projects, UI kits, agent tools, and apps, with star and download counts refreshed daily.
 - <img src="assets/icons/github.svg" alt="GitHub"> [m9tdev/awesome-effect](https://github.com/m9tdev/awesome-effect) - Earlier list, last updated July 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [evryg-org/awesome-effect-ts](https://github.com/evryg-org/awesome-effect-ts) - Short list from Evryg.
 - <img src="assets/icons/github.svg" alt="GitHub"> [betalyra/awesome-effect-ts](https://github.com/betalyra/awesome-effect-ts) - List from Betalyra.
