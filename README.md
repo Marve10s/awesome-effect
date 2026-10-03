@@ -689,7 +689,7 @@ Ports and libraries that borrow Effect's design outside TypeScript.
 
 ## Other lists
 
-- <img src="assets/icons/github.svg" alt="GitHub"> [tao-io/awesome-foldkit](https://github.com/tao-io/awesome-foldkit) - Foldkit projects, UI kits, agent tools, and apps, with star and download counts refreshed daily.
+- <img src="assets/icons/github.svg" alt="GitHub"> [foldhub/awesome-foldkit](https://github.com/foldhub/awesome-foldkit) - Foldkit projects, UI kits, agent tools, and apps, with star and download counts refreshed daily.
 - <img src="assets/icons/github.svg" alt="GitHub"> [m9tdev/awesome-effect](https://github.com/m9tdev/awesome-effect) - Earlier list, last updated July 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [evryg-org/awesome-effect-ts](https://github.com/evryg-org/awesome-effect-ts) - Short list from Evryg.
 - <img src="assets/icons/github.svg" alt="GitHub"> [betalyra/awesome-effect-ts](https://github.com/betalyra/awesome-effect-ts) - List from Betalyra.
