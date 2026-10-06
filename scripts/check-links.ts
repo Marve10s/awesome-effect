@@ -29,12 +29,14 @@ async function probe(url: string): Promise<Result> {
   }
 }
 
-// A slow host on a busy CI runner should not fail the build; retry network errors and 5xx once.
+// A slow host on a busy CI runner should not fail the build; retry network errors, 429, and 5xx once.
+// A host still rate-limiting after the retry answered, so the link is not dead.
 async function probeWithRetry(url: string): Promise<Result> {
   const first = await probe(url);
-  if (first.ok || (first.status >= 400 && first.status < 500)) return first;
+  if (first.ok || (first.status >= 400 && first.status < 500 && first.status !== 429)) return first;
   await Bun.sleep(3_000);
-  return probe(url);
+  const second = await probe(url);
+  return second.status === 429 ? { ...second, ok: true } : second;
 }
 
 const queue = urls.filter((u) => !SKIP_HOSTS.has(new URL(u).hostname));
