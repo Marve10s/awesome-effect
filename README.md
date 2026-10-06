@@ -177,7 +177,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [utopyin/effect-orpc](https://github.com/utopyin/effect-orpc) - Effect integration for oRPC.
 - <img src="assets/icons/github.svg" alt="GitHub"> [TheDevMinerTV/typed-at-rest](https://github.com/TheDevMinerTV/typed-at-rest) - Typesafe HTTP handlers and clients backed by Effect Schema.
 - <img src="assets/icons/github.svg" alt="GitHub"> [mac-monet/effect-domain](https://github.com/mac-monet/effect-domain) - Single source of truth for an API, derived into servers and clients. <img src="assets/tags/v4.svg" alt="Effect v4">
-- <img src="assets/icons/github.svg" alt="GitHub"> [thomasfosterau/effect-jsonapi](https://github.com/thomasfosterau/effect-jsonapi) - Define and implement JSON:API-compliant APIs. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/npm.svg" alt="npm"> [@thomasfosterau/effect-jsonapi](https://www.npmjs.com/package/@thomasfosterau/effect-jsonapi) - Define and implement JSON:API-compliant APIs. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [gabeins/effect-jsonapi](https://github.com/gabeins/effect-jsonapi) - JSON:API spec support for Effect. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [Dr-Nikson/effect-grpc](https://github.com/Dr-Nikson/effect-grpc) - gRPC and Protobuf for Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [erikshestopal/effect-protobuf](https://github.com/erikshestopal/effect-protobuf) - Generate Effect Schemas from `.proto` files and encode or decode binary, ProtoJSON, and text formats. <img src="assets/tags/v4.svg" alt="Effect v4">
@@ -266,8 +266,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 ### Cloud and infrastructure
 
 - <img src="assets/icons/github.svg" alt="GitHub"> [alchemy-run/alchemy](https://github.com/alchemy-run/alchemy) - Infrastructure as code written as Effect programs.
-- <img src="assets/icons/github.svg" alt="GitHub"> [alchemy-run/distilled](https://github.com/alchemy-run/distilled) - Effect-native SDKs for cloud providers generated from Smithy and OpenAPI models. Includes `distilled-aws`.
-- <img src="assets/icons/github.svg" alt="GitHub"> [alchemy-run/distilled-cloudflare](https://github.com/alchemy-run/distilled-cloudflare) - Typed Cloudflare SDK for R2, KV, Workers, Queues, Workflows, and DNS.
+- <img src="assets/icons/github.svg" alt="GitHub"> [alchemy-run/distilled](https://github.com/alchemy-run/distilled) - Effect-native SDKs for cloud providers generated from Smithy and OpenAPI models. Includes `distilled-aws` and `@distilled.cloud/cloudflare`, a typed Cloudflare SDK for R2, KV, Workers, Queues, Workflows, and DNS.
 - <img src="assets/icons/github.svg" alt="GitHub"> [kondaurovDev/effortless-aws](https://github.com/kondaurovDev/effortless-aws) - Code-first serverless framework that derives AWS infrastructure from handlers.
 - <img src="assets/icons/github.svg" alt="GitHub"> [danieljvdm/effect-cf](https://github.com/danieljvdm/effect-cf) - Primitives for Cloudflare Workers and bindings. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [jbt95/effect-cf](https://github.com/jbt95/effect-cf) - Typed clients for Cloudflare Workers with schema validation.

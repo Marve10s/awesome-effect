@@ -29,7 +29,6 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/github.svg" alt="GitHub"> [kiliancs/effect-workshop](https://github.com/kiliancs/effect-workshop) - Explanations and exercises for beginners. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [cardotrejos/effect-interactive-lab](https://github.com/cardotrejos/effect-interactive-lab) - Interactive React examples contrasting Effect with async/await.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect Days 2025 workshop](https://github.com/Effect-TS/effect-days-2025-workshop) - Official workshop exercises. Last updated 2025.
-- <img src="assets/icons/web.svg" alt="Website"> [Advent of Effect](https://adventofeffect.com) - Solve Advent of Code with Effect alongside the Discord.
 - <img src="assets/icons/web.svg" alt="Website"> [justfuckinguseeffect.dev](https://justfuckinguseeffect.dev) - Single-page argument for using Effect.
 - <img src="assets/icons/web.svg" alt="Website"> [Effect vs fp-ts](https://effect.website/docs/additional-resources/effect-vs-fp-ts/) - Official comparison for fp-ts users.
 
