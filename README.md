@@ -292,7 +292,6 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [danieljvdm/effect-agent](https://github.com/danieljvdm/effect-agent) - Agent engine package. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [mpsuesser/effect-autoagent](https://github.com/mpsuesser/effect-autoagent) - Define agents as declarative blueprints and run them as Effect services. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [clavia-labs/tardigrade](https://github.com/clavia-labs/tardigrade) - Framework for durable, modular agents.
-- <img src="assets/icons/github.svg" alt="GitHub"> [spiritledsoftware/commissary](https://github.com/spiritledsoftware/commissary) - Composable agent builder. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [semantiv-ai/effectful](https://github.com/semantiv-ai/effectful) - LLM task pipelines compiled to Effect programs.
 - <img src="assets/icons/github.svg" alt="GitHub"> [saiashirwad/roop](https://github.com/saiashirwad/roop) - Coding agent runtime built on Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [lvndry/jazz](https://github.com/lvndry/jazz) - CLI for creating autonomous agents with real-world capabilities.
