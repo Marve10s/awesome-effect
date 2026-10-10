@@ -121,6 +121,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 ### State management and UI
 
 - <img src="assets/icons/github.svg" alt="GitHub"> [sproott/effect-atom-svelte](https://github.com/sproott/effect-atom-svelte) - Svelte bindings for Effect Atom. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [jarrednorrisdev/effect-atom-svelte](https://github.com/jarrednorrisdev/effect-atom-svelte) - Svelte 5 bindings for Effect Atom, published as `effect-atom-svelte`, with async atoms you can `await` in markup, server rendering with hydration, and atoms for RPC and HttpApi. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [nhattran998/tanstack-db-atom](https://github.com/nhattran998/tanstack-db-atom) - Atoms that wrap TanStack DB collections and queries.
 - <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-xstate](https://github.com/typeonce-dev/effect-xstate) - XState actor integration for Effect Atom. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [foldkit/foldkit](https://github.com/foldkit/foldkit) - Frontend framework built on Effect with the Elm Architecture (one Model, a Message union, a pure update, and Commands that wrap Effects), plus routing, accessible UI components, server rendering, and a DevTools MCP server for coding agents. [Site](https://foldkit.dev). <img src="assets/tags/v4.svg" alt="Effect v4">
