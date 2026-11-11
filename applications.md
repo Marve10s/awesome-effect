@@ -79,6 +79,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/web.svg" alt="Website"> [Foldkit example apps](https://foldkit.dev/example-apps) - Foldkit examples from a counter to multiplayer games, each with source and a playground.
 - <img src="assets/icons/npm.svg" alt="npm"> [create-foldkit-app](https://www.npmjs.com/package/create-foldkit-app) - Scaffolds a Foldkit app.
 - <img src="assets/icons/github.svg" alt="GitHub"> [NolanGC/foldkit-alchemy-starter](https://github.com/NolanGC/foldkit-alchemy-starter) - Full-stack starter with a Foldkit frontend, deployed with Alchemy.
+- <img src="assets/icons/github.svg" alt="GitHub"> [PatrickOgilvie/popcomputer-web-demo](https://github.com/PatrickOgilvie/popcomputer-web-demo) - Template for @popcomputer/web apps on Cloudflare Workers, with Better Auth sign-in, D1, records only their owner sees, and tests.
 - <img src="assets/icons/github.svg" alt="GitHub"> [elianiva/nook](https://github.com/elianiva/nook) - Monorepo template with a Foldkit frontend, an Effect RPC backend, Cloudflare KV state, and Alchemy infrastructure.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jeremyosih/real-world-effect](https://github.com/jeremyosih/real-world-effect) - Open source Effect apps and templates collected in one repo for searching with agents.
 - <img src="assets/icons/github.svg" alt="GitHub"> [typeonce-dev/effect-getting-started-course](https://github.com/typeonce-dev/effect-getting-started-course) - Code for the Typeonce getting started course. Last updated 2025.
