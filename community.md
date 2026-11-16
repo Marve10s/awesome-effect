@@ -51,3 +51,5 @@ Each entry links to a public source. Names alone are not enough to be listed.
 - <img src="assets/icons/article.svg" alt="Article"> [Mixedbread](https://effect.website/blog/how-mixedbread-transformed-our-search) - Powers Effect docs search.
 - <img src="assets/icons/article.svg" alt="Article"> [Sentry](https://effect.website/blog/this-week-in-effect/110) - Ships an official `@sentry/effect` SDK.
 - <img src="assets/icons/article.svg" alt="Article"> [Thoughtworks](https://effect.website/blog/this-week-in-effect/60) - Put Effect on the Technology Radar after using it on client work.
+- <img src="assets/icons/article.svg" alt="Article"> [Expand AI](https://effect.website/blog/this-week-in-effect/140) - Built with Effect. Also named as a production adopter in [Reflections on Effect Days 2025](https://effect.website/blog/reflections-on-effect-days-2025).
+- <img src="assets/icons/podcast.svg" alt="Podcast"> [Anomaly](https://effect.website/podcast/episodes/effectifying-opencode-with-kit-langton/) - Podcast episode on migrating OpenCode to Effect.

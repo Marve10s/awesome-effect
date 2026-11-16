@@ -31,6 +31,8 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/github.svg" alt="GitHub"> [Effect Days 2025 workshop](https://github.com/Effect-TS/effect-days-2025-workshop) - Official workshop exercises. Last updated 2025.
 - <img src="assets/icons/web.svg" alt="Website"> [justfuckinguseeffect.dev](https://justfuckinguseeffect.dev) - Single-page argument for using Effect.
 - <img src="assets/icons/web.svg" alt="Website"> [Effect vs fp-ts](https://effect.website/docs/additional-resources/effect-vs-fp-ts/) - Official comparison for fp-ts users.
+- <img src="assets/icons/github.svg" alt="GitHub"> [stardazed/effectlings](https://github.com/stardazed/effectlings) - Small exercises that teach Effect v4 one idea at a time, in the style of rustlings.
+- <img src="assets/icons/web.svg" alt="Website"> [Effect by Example (bearing-ward)](https://bearing-ward.github.io/effectbyexample/) - Annotated, type-checked Effect v4 examples with a Run button in the browser. Source in [bearing-ward/effectbyexample](https://github.com/bearing-ward/effectbyexample).
 
 ## <img src="assets/pills/learning.svg" alt="Learning"> Patterns and reference
 
@@ -77,6 +79,10 @@ Part of [Awesome Effect](README.md).
 - <img src="assets/icons/article.svg" alt="Article"> [Breaking down Effect TS](https://dev.to/modgil_23/breaking-down-effect-ts-part-1-2e0i) - Two-part FP foundations series.
 - <img src="assets/icons/article.svg" alt="Article"> [Effects in TypeScript: a new way to build robust backends](https://merginit.com/blog/27062025-effects-in-typescript) - Merginit.
 - <img src="assets/icons/article.svg" alt="Article"> [Astra vs. The Boys: a tale of 200 PRs](https://effect.website/blog/astra-vs-the-boys) - Michael Arnaldi on 207 agent-written pull requests against the Effect codebase in three days, and the review agents built to handle them.
+- <img src="assets/icons/article.svg" alt="Article"> [Effect 4.0: the first week](https://effect.website/blog/effect-4-first-week) - Why explicit stability tags replaced the `effect/unstable/*` import paths, plus the 4.0.1 and 4.0.2 fixes.
+- <img src="assets/icons/article.svg" alt="Article"> [Module of the Week](https://effect.website/blog/module-of-the-week) - Maxwell Brown's series on lesser-known modules, including [PersistedQueue](https://effect.website/blog/module-of-the-week/persisted-queue), [RcMap](https://effect.website/blog/module-of-the-week/rcmap), and a five-part [Cluster](https://effect.website/blog/module-of-the-week/cluster-actors) series.
+- <img src="assets/icons/article.svg" alt="Article"> [Effect 3.20 security update](https://effect.website/blog/effect-3-20-security-update) - Advisory for versions before 3.20.0, where AsyncLocalStorage context could leak across requests under concurrent load.
+- <img src="assets/icons/article.svg" alt="Article"> [Changes to STM in Effect 4](https://dev.to/khraks_mamtsov/changes-to-stm-in-effect-4-33c3) - Max Khramtsov.
 
 ## <img src="assets/pills/learning.svg" alt="Learning"> Videos and talks
 

@@ -72,6 +72,10 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/web.svg" alt="Website"> [citymcp](https://citymcp.com) - Live city data for agents, built at a hackathon.
 - <img src="assets/icons/web.svg" alt="Website"> [Dtapline](https://dtapline.com) - Deployment tracking and visualization.
 - <img src="assets/icons/web.svg" alt="Website"> [Highlight Hunter](https://frostytools.com/highlight-hunter/about) - Finds highlights in Twitch VODs, Effect on the backend.
+- <img src="assets/icons/github.svg" alt="GitHub"> [UsefulSoftwareCo/executor](https://github.com/UsefulSoftwareCo/executor) - Connects the services you use to any agent through one MCP endpoint without exposing credentials to the agent, built on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [chr33s/bye](https://github.com/chr33s/bye) - Email and calendar platform inspired by HEY, built on Cloudflare, Alchemy, and <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [G3root/feeblo](https://github.com/G3root/feeblo) - Feedback boards, a public roadmap and changelog, an embeddable widget, and a public API with MCP tools.
+- <img src="assets/icons/github.svg" alt="GitHub"> [davidlbowman/kavita-to-obsidian](https://github.com/davidlbowman/kavita-to-obsidian) - Obsidian plugin that syncs Kavita annotations, highlights, and bookmarks into a vault, built on <img src="assets/tags/v4.svg" alt="Effect v4">
 
 ## <img src="assets/pills/apps.svg" alt="Applications"> Examples, templates, and starters
 
@@ -150,3 +154,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [ruizb/adventofcode2022](https://github.com/ruizb/adventofcode2022) - Advent of Code 2022 in Effect. Last updated 2023.
 - <img src="assets/icons/github.svg" alt="GitHub"> [LeoSM-07/adventofcode-2025](https://github.com/LeoSM-07/adventofcode-2025) - Advent of Code 2025 in Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [tim-smart/aoc25](https://github.com/tim-smart/aoc25) - Tim Smart's Advent of Code 2025 solutions.
+- <img src="assets/icons/github.svg" alt="GitHub"> [joelhooks/rat-stack](https://github.com/joelhooks/rat-stack) - Agentic TypeScript scaffold with XState 6, Alchemy infrastructure, and a Turborepo workspace, built on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [Fawwaz-2009/proof](https://github.com/Fawwaz-2009/proof) - Bun monorepo starter on Cloudflare and Alchemy where every pull request deploys its own preview, built on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [vantionlabs/saas-starter](https://github.com/vantionlabs/saas-starter) - Multi-tenant B2B SaaS template on TanStack Start and Postgres with row-level security, auth, billing, and agent skills, built on <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [daguttt/effect-fullstack-template](https://github.com/daguttt/effect-fullstack-template) - Template with Convex, Confect, WorkOS AuthKit, and TanStack Router in a pnpm and Turborepo workspace, built on <img src="assets/tags/v4.svg" alt="Effect v4">
