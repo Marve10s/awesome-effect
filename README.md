@@ -6,7 +6,7 @@ Libraries, tools, apps, and learning material for [Effect](https://effect.websit
 
 Effect 4 is the current major. The list is split by it: Effect v4 core is what ships with Effect 4, Ecosystem libraries are third-party packages that work next to it, and Effect v3 legacy holds the packages that were merged into core plus libraries still pinned to `effect@3`. Tools, apps, examples, and learning resources follow.
 
-<img src="assets/pills/updated.svg" alt="Last updated 2026-09-14">
+<img src="assets/pills/updated.svg" alt="Last updated 2026-11-16">
 
 ## More
 
@@ -134,7 +134,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [ilhajs/ilha](https://github.com/ilhajs/ilha) - Isomorphic UI library that renders components on the server and hydrates only the interactive islands in the browser, with atoms for reactivity. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [craft-ts/craft-ts](https://github.com/craft-ts/craft-ts) - Signal-first toolkit for state, async work, services, forms, dependency injection, and routes, with an `@craft-ts/effect` adapter that exposes Effect programs as reactive resources. [Guide for Effect users](https://craft-ts.github.io/craft/learn-effect/00-start-here). <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [m9tdev/verrex](https://github.com/m9tdev/verrex) - UI framework where the A, E, R channels of an Effect survive from every leaf of the view tree to the root. <img src="assets/tags/v4.svg" alt="Effect v4">
-- <img src="assets/icons/github.svg" alt="GitHub"> [doeixd/effect-atom-jsx](https://github.com/doeixd/effect-atom-jsx) - Fine-grained JSX runtime with Layer-provided services, async atoms, and optimistic actions. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [doeixd/affe](https://github.com/doeixd/affe) - Fine-grained JSX runtime with Layer-provided services, async atoms, and optimistic actions. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [lself1022/effer](https://github.com/lself1022/effer) - UI library built on lit-html with Effect at the core.
 - <img src="assets/icons/github.svg" alt="GitHub"> [Thiladev/effect-view](https://github.com/Thiladev/effect-view) - Write React function components as Effects. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [bmvantunes/effect-view-server](https://github.com/bmvantunes/effect-view-server) - Turns validated source streams into typed snapshots and deltas for React and other clients. <img src="assets/tags/v4.svg" alt="Effect v4">
@@ -148,7 +148,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [cevr/effect-machine](https://github.com/cevr/effect-machine) - Schema-first state machines with compile-time transition checks, state-scoped effects, and persistence. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [umpire-tools/umpire](https://github.com/umpire-tools/umpire) - Reactive derived state for forms with interdependent options. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [carloitaben/conform-to-effect](https://github.com/carloitaben/conform-to-effect) - Conform helpers that validate forms with Effect Schema. <img src="assets/tags/v4.svg" alt="Effect v4">
-- <img src="assets/icons/web.svg" alt="Website"> [Alette Signal](https://alette-os.com) - Frontend data fetching library built with Effect.
+- <img src="assets/icons/github.svg" alt="GitHub"> [AlexShRz/alette-os](https://github.com/AlexShRz/alette-os) - Frontend data fetching library built with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [julia-script/effect-motion](https://github.com/julia-script/effect-motion) - Animation primitives on Effect. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [lucas-barake/effect-form](https://github.com/lucas-barake/effect-form) - Forms with Effect Schema validation and React bindings. <img src="assets/tags/v4.svg" alt="Effect v4">
 
@@ -289,7 +289,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/github.svg" alt="GitHub"> [betalyra/effect-uai](https://github.com/betalyra/effect-uai) - Building blocks for agentic AI with provider packages. Effect v4. [Docs](https://effect-uai.betalyra.com).
 - <img src="assets/icons/github.svg" alt="GitHub"> [humanlayer/fold](https://github.com/humanlayer/fold) - Provider-agnostic, isomorphic agent core with an optional coding agent, CLI, and TUI.
 - <img src="assets/icons/github.svg" alt="GitHub"> [doeixd/affe-agent](https://github.com/doeixd/affe-agent) - Agent execution kernel: sessions, runs, turns, steering, and typed lifecycle events. <img src="assets/tags/v4.svg" alt="Effect v4">
-- <img src="assets/icons/github.svg" alt="GitHub"> [danieljvdm/effect-agent](https://github.com/danieljvdm/effect-agent) - Agent engine package. <img src="assets/tags/v4.svg" alt="Effect v4">
+- <img src="assets/icons/github.svg" alt="GitHub"> [yielded-dev/agent](https://github.com/yielded-dev/agent) - Agent harness toolkit built on Effect and Effect AI. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [mpsuesser/effect-autoagent](https://github.com/mpsuesser/effect-autoagent) - Define agents as declarative blueprints and run them as Effect services. <img src="assets/tags/v4.svg" alt="Effect v4">
 - <img src="assets/icons/github.svg" alt="GitHub"> [clavia-labs/tardigrade](https://github.com/clavia-labs/tardigrade) - Framework for durable, modular agents.
 - <img src="assets/icons/github.svg" alt="GitHub"> [semantiv-ai/effectful](https://github.com/semantiv-ai/effectful) - LLM task pipelines compiled to Effect programs.
@@ -334,7 +334,7 @@ Third-party libraries that work next to Effect 4. An entry ending in <img src="a
 - <img src="assets/icons/web.svg" alt="Website"> [Effect best practices on skills.sh](https://skills.sh/makisuo/skills/effect-best-practices) - Skill by Makisuo.
 - <img src="assets/icons/github.svg" alt="GitHub"> [dojofoo/dojofoo](https://github.com/dojofoo/dojofoo) - Coding practices and courses with an Effect package.
 - <img src="assets/icons/github.svg" alt="GitHub"> [mpsuesser/pi-effect-harness](https://github.com/mpsuesser/pi-effect-harness) - Extension for pi that enforces Effect v4 practices during agent sessions.
-- <img src="assets/icons/github.svg" alt="GitHub"> [mpsuesser/opencode-effect-enforcer](https://github.com/mpsuesser/opencode-effect-enforcer) - OpenCode plugin with 44 regex and AST rules that block Effect anti-patterns in real time.
+- <img src="assets/icons/github.svg" alt="GitHub"> [mpsuesser/enfect](https://github.com/mpsuesser/enfect) - Plugins for Claude Code, OpenCode, Codex, Pi, and oxlint that block Effect anti-patterns.
 - <img src="assets/icons/github.svg" alt="GitHub"> [doeixd/opencode-ralph-rlm](https://github.com/doeixd/opencode-ralph-rlm) - OpenCode plugin for Ralph outer-loop development, built on Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [iskandarsulaili/hermes-ultimate-coding](https://github.com/iskandarsulaili/hermes-ultimate-coding) - Hermes agent plugins including Effect guidance.
 - <img src="assets/icons/github.svg" alt="GitHub"> [directormac/effect-v4-docs](https://github.com/directormac/effect-v4-docs) - Effect v4 docs packaged for agents.
@@ -496,7 +496,6 @@ Peer dependency stops at 3.x, or no commits since before the Effect 4 release ca
 - <img src="assets/icons/github.svg" alt="GitHub"> [PaulJPhilp/effect-mdx](https://github.com/PaulJPhilp/effect-mdx) - Parse, compile, and manipulate MDX. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [PaulJPhilp/effect-regex](https://github.com/PaulJPhilp/effect-regex) - Regex processing CLI and library. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [PaulJPhilp/effect-env](https://github.com/PaulJPhilp/effect-env) - Environment variables with schema validation. Last updated 2025.
-- <img src="assets/icons/github.svg" alt="GitHub"> [emergente-labs/effect-env](https://github.com/emergente-labs/effect-env) - Environment variable configuration with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [hychen/effect-builder](https://github.com/hychen/effect-builder) - Immutable builder pattern with runtime validation. Last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [sukovanej/effect-monocle](https://github.com/sukovanej/effect-monocle) - Port of monocle-ts optics. Effect v3, last updated 2024.
 - <img src="assets/icons/github.svg" alt="GitHub"> [middle-ages/effect-ts-folds](https://github.com/middle-ages/effect-ts-folds) - Recursion schemes for Effect.
@@ -531,7 +530,6 @@ Peer dependency stops at 3.x, or no commits since before the Effect 4 release ca
 - <img src="assets/icons/github.svg" alt="GitHub"> [jessekelly881/effect-idb](https://github.com/jessekelly881/effect-idb) - IndexedDB wrapper. Last updated 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [juemrami/effect-idb](https://github.com/juemrami/effect-idb) - IndexedDB wrapper with a transaction API.
 - <img src="assets/icons/github.svg" alt="GitHub"> [nounder/effect-memfs](https://github.com/nounder/effect-memfs) - In-memory file system for mocking and tests. Last updated 2025.
-- <img src="assets/icons/github.svg" alt="GitHub"> [6qat/effect-redis](https://github.com/6qat/effect-redis) - Effect wrapper for Redis.
 - <img src="assets/icons/github.svg" alt="GitHub"> [TylorS/effect-sql-kysely](https://github.com/TylorS/effect-sql-kysely) - `@effect/sql` interface for Kysely.
 - <img src="assets/icons/github.svg" alt="GitHub"> [al3xanderwalker/redfx](https://github.com/al3xanderwalker/redfx) - Redis with typed commands, schema-typed keys, pub/sub and streams as Effect Streams, and caching.
 - <img src="assets/icons/github.svg" alt="GitHub"> [jbt95/effect-kv](https://github.com/jbt95/effect-kv) - Cloudflare KV wrapper.
@@ -693,7 +691,6 @@ Ports and libraries that borrow Effect's design outside TypeScript.
 - <img src="assets/icons/github.svg" alt="GitHub"> [m9tdev/awesome-effect](https://github.com/m9tdev/awesome-effect) - Earlier list, last updated July 2025.
 - <img src="assets/icons/github.svg" alt="GitHub"> [evryg-org/awesome-effect-ts](https://github.com/evryg-org/awesome-effect-ts) - Short list from Evryg.
 - <img src="assets/icons/github.svg" alt="GitHub"> [betalyra/awesome-effect-ts](https://github.com/betalyra/awesome-effect-ts) - List from Betalyra.
-- <img src="assets/icons/github.svg" alt="GitHub"> [lvndry/awesome-effect-ts](https://github.com/lvndry/awesome-effect-ts) - List with a contribution checklist.
 - <img src="assets/icons/github.svg" alt="GitHub"> [sundaray/awesome-effect](https://github.com/sundaray/awesome-effect) - Learning resources.
 - <img src="assets/icons/github.svg" alt="GitHub"> [marbemac/llms-effect](https://github.com/marbemac/llms-effect) - Repositories picked for LLM-assisted learning.
 

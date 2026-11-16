@@ -20,7 +20,7 @@ Open source apps and services with Effect in their stack.
 - <img src="assets/icons/github.svg" alt="GitHub"> [marimo-team/marimo](https://github.com/marimo-team/marimo) - Reactive Python notebook. Its VS Code extension is written with Effect.
 - <img src="assets/icons/github.svg" alt="GitHub"> [AnswerOverflow/AnswerOverflow](https://github.com/AnswerOverflow/AnswerOverflow) - Indexes Discord threads as web pages. Large Effect v3 codebase.
 - <img src="assets/icons/github.svg" alt="GitHub"> [RhysSullivan/create-epoch-app](https://github.com/RhysSullivan/create-epoch-app) - Full-stack starter with Effect, Convex, and Next.js. The same author's Effect v4 reference codebase.
-- <img src="assets/icons/github.svg" alt="GitHub"> [HazelChat/hazel](https://github.com/HazelChat/hazel) - Local-first real-time chat on Effect, ElectricSQL, and React 19.
+- <img src="assets/icons/github.svg" alt="GitHub"> [MapleTechLabs/hazel](https://github.com/MapleTechLabs/hazel) - Local-first real-time chat on Effect, ElectricSQL, and React 19.
 - <img src="assets/icons/github.svg" alt="GitHub"> [steipete/birdclaw](https://github.com/steipete/birdclaw) - Stores your tweets in a form agents can query.
 - <img src="assets/icons/github.svg" alt="GitHub"> [zenbu-labs/zenbu.js](https://github.com/zenbu-labs/zenbu.js) - Framework for apps that users and agents modify at runtime through source editing.
 - <img src="assets/icons/github.svg" alt="GitHub"> [antoine-coulon/skott](https://github.com/antoine-coulon/skott) - Analyze and visualize module dependency graphs.
